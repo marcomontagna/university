@@ -1,0 +1,301 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>hw4_nn_matlab</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-21"><meta name="DC.source" content="hw4_nn_matlab.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">homework 4</a></li></ul></div><pre class="codeinput"><span class="comment">% ECE 559 Neural Networks - Fall 2018</span>
+<span class="comment">% Marco Montagna</span>
+<span class="comment">% Homework 4</span>
+
+close <span class="string">all</span>
+clear <span class="string">all</span>
+clc
+</pre><h2 id="2">homework 4</h2><pre class="codeinput">tanh = @(x) (exp(x)-exp(-x))./(exp(x)+exp(-x));
+n = 300; <span class="comment">% number of inputs</span>
+N = 24;
+x = rand (n, 1); <span class="comment">% inizialize randomly x vector</span>
+v = (1/10-(-1/10)).*rand(n,1)-1/10;
+
+eta1 = 1;
+eta2 = 0.8;
+
+d = sin(20*x)+3*x+v;
+
+<span class="comment">% initialize weights</span>
+w1 = (10).*randn(24, 2);
+w2 = (1).*randn(1, 25);
+
+epoch = 1;
+<span class="comment">% initial energy</span>
+MSE(1) = 0;
+<span class="keyword">for</span> i=1:n
+    <span class="comment">% input layer</span>
+    out0 = x(i);
+    <span class="comment">% hidden layer</span>
+    v1 = w1*[1 ; out0];
+    out1 = tanh(v1);
+    <span class="comment">% output layer</span>
+    v2 = w2*[1 ; out1];
+    y = v2;
+    MSE(1) = MSE(1) + (1/n)*((d(i)-y)^2);
+<span class="keyword">end</span>
+
+
+figure(1)
+plot(epoch,MSE(1));
+axis([0 inf 0 1])
+title(<span class="string">'MSE vs Epochs'</span>);
+xlabel(<span class="string">'Epoch'</span>);
+ylabel(<span class="string">'MSE (Mean Squared Error)'</span>);
+hold <span class="string">on</span>
+grid <span class="string">on</span>
+
+i = 1;
+flag_while = true;
+epoch = 2;
+
+<span class="keyword">while</span> (flag_while == true)
+    <span class="keyword">for</span> i=1:n
+        <span class="comment">% input layer</span>
+        out0 = x(i);
+        <span class="comment">% hidden layer</span>
+        v1 = w1*[1 ; out0];
+        out1 = tanh(v1);
+        <span class="comment">% output layer</span>
+        v2 = w2*[1 ; out1];
+        y = v2;
+
+        <span class="comment">% gradient, backpropagation method</span>
+        delta2 = (d(i)-y)*1;
+        delta1 = w2(2:25)'*delta2.*(1-out1.^2);
+        g1 = -(2/n)*delta1*[1;out0]';
+        g2 = -(2/n)*delta2*[1;out1]';
+
+        <span class="comment">% update weights</span>
+        w1 = w1-eta1*g1;
+        w2 = w2-eta2*g2;
+    <span class="keyword">end</span>
+
+    MSE(epoch) = 0;
+    <span class="keyword">for</span> k=1:n
+        <span class="comment">% input layer</span>
+        out0 = x(k);
+        <span class="comment">% hidden layer</span>
+        v1 = w1*[1 ; out0];
+        out1 = tanh(v1);
+        <span class="comment">% output layer</span>
+        v2 = w2*[1 ; out1];
+        y = v2;
+        MSE(epoch) = MSE(epoch) + (1/n)*((d(k)-y)^2);
+        f_final(k) = y;
+
+    <span class="keyword">end</span>
+
+    figure(1), plot(epoch,MSE(epoch), <span class="string">'b.'</span>);
+
+    <span class="keyword">if</span> ((norm(g1)&lt;10e-4 || norm(g2)&lt;10e-4) &amp;&amp; MSE(epoch)&lt;5e-3)
+        flag_while = false;
+    <span class="keyword">end</span>
+
+    <span class="keyword">if</span> MSE(epoch)&gt;MSE(epoch-1)
+        eta1 = 0.9*eta1;
+        eta2 = 0.9*eta2;
+    <span class="keyword">end</span>
+
+    epoch = epoch + 1;
+
+<span class="keyword">end</span>
+
+figure(2), plot(x,d,<span class="string">'r.'</span>);
+grid <span class="string">on</span>
+hold <span class="string">on</span>
+plot(x, f_final', <span class="string">'b*'</span>);
+legend(<span class="string">'desired'</span>, <span class="string">'fitted'</span>)
+title(<span class="string">'Curve fitting'</span>)
+xlabel(<span class="string">'x'</span>)
+ylabel(<span class="string">'y'</span>)
+</pre><pre class="codeoutput error">Error using figure
+Operation terminated by user
+
+Error in hw4_nn_matlab (line 91)
+    figure(1), plot(epoch,MSE(epoch), 'b.');
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% ECE 559 Neural Networks - Fall 2018
+% Marco Montagna
+% Homework 4
+
+close all
+clear all 
+clc
+
+%% homework 4
+tanh = @(x) (exp(x)-exp(-x))./(exp(x)+exp(-x));
+n = 300; % number of inputs
+N = 24;
+x = rand (n, 1); % inizialize randomly x vector
+v = (1/10-(-1/10)).*rand(n,1)-1/10;
+
+eta1 = 1;
+eta2 = 0.8;
+
+d = sin(20*x)+3*x+v;
+
+% initialize weights
+w1 = (10).*randn(24, 2);
+w2 = (1).*randn(1, 25);
+
+epoch = 1;
+% initial energy
+MSE(1) = 0;
+for i=1:n
+    % input layer
+    out0 = x(i);
+    % hidden layer
+    v1 = w1*[1 ; out0];
+    out1 = tanh(v1);
+    % output layer
+    v2 = w2*[1 ; out1];
+    y = v2;
+    MSE(1) = MSE(1) + (1/n)*((d(i)-y)^2);
+end
+
+
+figure(1)
+plot(epoch,MSE(1));
+axis([0 inf 0 1])
+title('MSE vs Epochs');
+xlabel('Epoch');
+ylabel('MSE (Mean Squared Error)');
+hold on
+grid on
+
+i = 1;
+flag_while = true;
+epoch = 2;
+
+while (flag_while == true)
+    for i=1:n
+        % input layer
+        out0 = x(i);
+        % hidden layer
+        v1 = w1*[1 ; out0];
+        out1 = tanh(v1);
+        % output layer
+        v2 = w2*[1 ; out1];
+        y = v2;
+    
+        % gradient, backpropagation method
+        delta2 = (d(i)-y)*1;
+        delta1 = w2(2:25)'*delta2.*(1-out1.^2);
+        g1 = -(2/n)*delta1*[1;out0]';
+        g2 = -(2/n)*delta2*[1;out1]';
+    
+        % update weights
+        w1 = w1-eta1*g1;
+        w2 = w2-eta2*g2;
+    end
+    
+    MSE(epoch) = 0;
+    for k=1:n
+        % input layer
+        out0 = x(k);
+        % hidden layer
+        v1 = w1*[1 ; out0];
+        out1 = tanh(v1);
+        % output layer
+        v2 = w2*[1 ; out1];
+        y = v2;
+        MSE(epoch) = MSE(epoch) + (1/n)*((d(k)-y)^2);
+        f_final(k) = y;
+          
+    end
+    
+    figure(1), plot(epoch,MSE(epoch), 'b.');
+    
+    if ((norm(g1)<10e-4 || norm(g2)<10e-4) && MSE(epoch)<5e-3)
+        flag_while = false;
+    end
+    
+    if MSE(epoch)>MSE(epoch-1)
+        eta1 = 0.9*eta1;
+        eta2 = 0.9*eta2;
+    end
+    
+    epoch = epoch + 1;
+    
+end
+
+figure(2), plot(x,d,'r.');
+grid on 
+hold on
+plot(x, f_final', 'b*');
+legend('desired', 'fitted')
+title('Curve fitting')
+xlabel('x')
+ylabel('y')
+##### SOURCE END #####
+--></body></html>
