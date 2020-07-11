@@ -1,0 +1,1260 @@
+# depslib dependency file v1.0
+1464709168 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+
+1464555576 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1464725118 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1464451354 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464555582 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1464715674 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1464711740 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+
+1464712680 h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+
+1464555560 source:h:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1464709168 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+
+1464555576 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1464823126 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1464451354 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464555582 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464451548 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555540 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464451578 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464708350 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1464451534 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464711740 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+
+1464712680 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+
+1464555560 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1464451566 i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464823126 source:i:\algoritmi e calcolatori\progetto_r\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464709168 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+
+1464555576 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1464823126 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1464827296 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\elabora_circuito.cpp
+	"Elabora_circuito.hpp"
+
+1464826928 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\elabora_circuito.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464555582 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1464823126 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1464711740 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+
+1464712680 c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+
+1464555560 source:c:\users\ricca\desktop\progetto_r\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465037394 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+	"Read_Inputs.hpp"
+
+1464909005 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1465042469 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1465042462 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\elabora_circuito.cpp
+	"Elabora_circuito.hpp"
+	<vector>
+	<fstream>
+
+1465035966 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\elabora_circuito.hpp
+	<vector>
+	"ReadFile.hpp"
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464909025 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465081959 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465083243 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+	"Elabora_circuito.hpp"
+	"Nodi_class.hpp"
+
+1465040801 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+	<vector>
+	"ReadFile.hpp"
+
+1465084656 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+	<fstream>
+
+1465084841 c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	"Nodi_class.hpp"
+
+1464555560 source:c:\users\ricca\desktop\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465153360 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+	"Read_Inputs.hpp"
+
+1465155824 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1465042469 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1465153203 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+	<vector>
+	"ReadFile.hpp"
+
+1464909005 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1465152856 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\elabora_circuito.cpp
+	"Elabora_circuito.hpp"
+	<vector>
+	<fstream>
+
+1465035966 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\elabora_circuito.hpp
+	<vector>
+	"ReadFile.hpp"
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464909025 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465081959 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465153292 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+	"Elabora_circuito.hpp"
+	"Nodi_class.hpp"
+
+1465084908 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+	<fstream>
+
+1464555560 source:c:\users\marco montagna\desktop\progetto_tot (2)\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465159784 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+	"Read_Inputs.hpp"
+
+1465515630 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1465042469 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1465153203 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+	<vector>
+	"ReadFile.hpp"
+
+1464909005 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1465152856 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\elabora_circuito.cpp
+	"Elabora_circuito.hpp"
+	<vector>
+	<fstream>
+
+1465035966 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\elabora_circuito.hpp
+	<vector>
+	"ReadFile.hpp"
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464909025 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465081959 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465160991 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+	"Elabora_circuito.hpp"
+	"Nodi_class.hpp"
+	<sstream>
+
+1464555560 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465515538 source:c:\users\ricca\desktop\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+	<fstream>
+	<sstream>
+
+1465159784 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+	"Read_Inputs.hpp"
+
+1465553177 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1465042469 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1465153203 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+	<vector>
+	"ReadFile.hpp"
+
+1464909005 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1465152856 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\elabora_circuito.cpp
+	"Elabora_circuito.hpp"
+	<vector>
+	<fstream>
+
+1465035966 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\elabora_circuito.hpp
+	<vector>
+	"ReadFile.hpp"
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464909025 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465081959 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465550200 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+	"Elabora_circuito.hpp"
+	"Nodi_class.hpp"
+	<sstream>
+
+1464555560 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465556889 source:c:\users\marco montagna\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+	<fstream>
+	<sstream>
+
+1465740487 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1465739406 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1465595487 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+
+1465153203 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\read_inputs.hpp
+	<string>
+	<vector>
+	"ReadFile.hpp"
+
+1464909005 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1464451354 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451354 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1465152856 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\elabora_circuito.cpp
+	"Elabora_circuito.hpp"
+	<vector>
+	<fstream>
+
+1465594280 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\elabora_circuito.hpp
+	<vector>
+	"ReadFile.hpp"
+
+1464451354 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1464909025 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1464451502 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465595487 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1464451534 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451566 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451548 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1464451578 c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1464555590 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1464555540 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1464708350 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465593863 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\read_inputs.cpp
+	"Read_Inputs.hpp"
+	"Elabora_circuito.hpp"
+	<sstream>
+
+1465739860 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+
+1464555560 source:c:\users\ricca\desktop\completo_pro\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465740487 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1465785878 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1465784177 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+	<vector>
+
+1465778424 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1465778403 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778403 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1465777986 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1465777986 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465784177 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1465778403 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778642 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778476 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778749 c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778451 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1465778749 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1465778491 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465781648 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+
+1465778642 source:c:\users\ricca\desktop\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465740487 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1465785878 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1465784177 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+	<vector>
+
+1465778424 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1465778403 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778403 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+
+1464451354 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1465777986 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1465777986 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1465784177 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+
+1465778403 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778642 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778476 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778749 c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1465778451 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1465778749 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1465778491 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1465778642 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1465851409 source:c:\users\marco montagna\downloads\versione vettori\versione vettori\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+
+1465740487 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1466849687 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1466852174 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+	<vector>
+
+1464451354 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1466853729 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+	<iostream>
+
+1466850452 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1466850392 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1466850473 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1466850392 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466850501 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1466850392 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1466853925 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1466850392 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1466859891 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+
+1466853937 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1466850392 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466853915 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1466850392 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1466859287 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+	"XNOR_gate.hpp"
+
+1466859200 source:c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xnor_gate.cpp
+	"XNOR_gate.hpp"
+
+1466859200 c:\users\marco montagna\desktop\ufficila\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xnor_gate.hpp
+	"Logic_Gates.hpp"
+
+1465740487 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1466875568 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1466875414 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+	<vector>
+
+1466873048 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1466875272 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873048 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+	<iostream>
+
+1464451354 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1466873331 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1466875272 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873116 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+	"XNOR_gate.hpp"
+
+1466875272 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1466859200 c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xnor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873331 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1466873048 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1466875896 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+
+1466873331 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xnor_gate.cpp
+	"XNOR_gate.hpp"
+
+1466873331 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1466872503 source:c:\users\ricca\desktop\ufficiale\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1465740487 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1466875568 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1466875414 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+	<vector>
+
+1466873048 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1466875272 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873048 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+	<iostream>
+
+1464451354 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1466873331 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1466875272 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873116 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+	"XNOR_gate.hpp"
+
+1466875272 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1466859200 c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xnor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873331 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1466872503 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1466873048 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1467151420 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xnor_gate.cpp
+	"XNOR_gate.hpp"
+
+1466873331 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1467158995 source:c:\users\ricca\desktop\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+
+1465740487 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\main.cpp
+	<iostream>
+	<string>
+	"ReadFile.hpp"
+
+1466875568 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\readfile.hpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<vector>
+	<string>
+	<sstream>
+	"Nodi_class.hpp"
+
+1466875414 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nodi_class.hpp
+	<list>
+	<string>
+	<vector>
+
+1466873048 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\and_gate.cpp
+	"AND_gate.hpp"
+	<iostream>
+
+1466875272 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\and_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873048 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\logic_gates.hpp
+	<vector>
+	"Nodi_class.hpp"
+	<iostream>
+
+1464451354 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\logic_gates.cpp
+	"Logic_Gates.hpp"
+
+1466873331 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nand_gate.cpp
+	"NAND_gate.hpp"
+
+1466875272 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nand_gate.hpp
+	"Logic_Gates.hpp"
+
+1467189841 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nodi_class.cpp
+	"Nodi_class.hpp"
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"AND_gate.hpp"
+	"NAND_gate.hpp"
+	"OR_gate.hpp"
+	"XOR_gate.hpp"
+	"NOR_gate.hpp"
+	"NOT_gate.hpp"
+	"XNOR_gate.hpp"
+
+1466875272 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\or_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\nor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466875272 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\not_gate.hpp
+	"Logic_Gates.hpp"
+
+1466859200 c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\include\xnor_gate.hpp
+	"Logic_Gates.hpp"
+
+1466873331 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\nor_gate.cpp
+	"NOR_gate.hpp"
+
+1466872503 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\not_gate.cpp
+	"NOT_gate.hpp"
+	<iostream>
+	<stdlib.h>
+
+1466873048 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\or_gate.cpp
+	"OR_gate.hpp"
+
+1467151420 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xnor_gate.cpp
+	"XNOR_gate.hpp"
+
+1466873331 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\xor_gate.cpp
+	"XOR_gate.hpp"
+
+1467198689 source:c:\users\marco montagna\desktop\fileuff\finitooo\completo_pro\progetto_tot\logic_simulator_rossi_montagna\src\readfile.cpp
+	"ReadFile.hpp"
+

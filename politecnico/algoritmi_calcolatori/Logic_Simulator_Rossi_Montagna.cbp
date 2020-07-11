@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Logic_Simulator_Rossi_Montagna" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Logic_Simulator_Rossi_Montagna" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Logic_Simulator_Rossi_Montagna" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/AND_gate.hpp" />
+		<Unit filename="include/Logic_Gates.hpp" />
+		<Unit filename="include/NAND_gate.hpp" />
+		<Unit filename="include/NOR_gate.hpp" />
+		<Unit filename="include/NOT_gate.hpp" />
+		<Unit filename="include/Nodi_class.hpp" />
+		<Unit filename="include/OR_gate.hpp" />
+		<Unit filename="include/ReadFile.hpp" />
+		<Unit filename="include/XNOR_gate.hpp" />
+		<Unit filename="include/XOR_gate.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AND_gate.cpp" />
+		<Unit filename="src/Logic_Gates.cpp" />
+		<Unit filename="src/NAND_gate.cpp" />
+		<Unit filename="src/NOR_gate.cpp" />
+		<Unit filename="src/NOT_gate.cpp" />
+		<Unit filename="src/Nodi_class.cpp" />
+		<Unit filename="src/OR_gate.cpp" />
+		<Unit filename="src/ReadFile.cpp" />
+		<Unit filename="src/XNOR_gate.cpp" />
+		<Unit filename="src/XOR_gate.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,8 @@
+0 1 
+1 1 
+0 0 
+0 1 
+
+Complessita' dell'output O0 vale: 1 (Net + Porte)
+Complessita' dell'output O1 vale: 1 (Net + Porte)
+Output 0 e' il piu' complesso -> 1 Net + Porte!

@@ -1,0 +1,7 @@
+//and 4 bits 
+NAME AND4 
+INPUTS 4
+OUTPUTS 1
+NETS 0
+GATES 
+  AND4 U0 I0, I1, I2, I3, O0

@@ -1,0 +1,10 @@
+//two's complement circuit 
+NAME 2sC 
+INPUTS 1
+OUTPUTS 1
+NETS 2
+GATES 
+  OR2 U0 I0, N1, N0
+  XOR2 U1 I0, N1, O0
+  FF F1 N0, N1
+  
