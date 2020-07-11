@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.std_logic_1164.all; --  libreria IEEE con definizione tipi standard logic
+
+entity MUX_6 is 
+	generic (n: integer:=32);
+	Port (	
+		A:	In	std_logic_vector(n-1 downto 0); 
+		B:	In	std_logic_vector(n-1 downto 0);
+		C:	In	std_logic_vector(n-1 downto 0);
+		D:	In	std_logic_vector(n-1 downto 0); 
+		E:	In	std_logic_vector(n-1 downto 0);
+		F:	In	std_logic_vector(n-1 downto 0);
+		S:	In	std_logic_vector(2 downto 0);
+		Y:	Out	std_logic_vector(n-1 downto 0));
+end MUX_31 ;
+
+architecture BEH of MUX_31  is
+	SIGNAL UNDEFINED: STD_LOGIC_VECTOR (N-1 DOWNTO 0):=(OTHERS => 'X');
+begin
+	
+	Y <= A when S="000" else 
+	     B WHEN S="001" ELSE
+	     C WHEN S="010" ELSE
+	     D when S="011" else 
+	     E WHEN S="001" ELSE
+	     F WHEN S="011" ELSE
+	     A;
+
+end BEH;

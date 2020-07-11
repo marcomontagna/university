@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- Sync reset register with enable
+
+entity nbit_reg is
+	generic (n: integer);
+	port (data: in std_logic_vector(n-1 downto 0);
+			enable, clock, clear: in std_logic;
+			Q: out std_logic_vector(n-1 downto 0));
+end nbit_reg;
+
+architecture behaviour of nbit_reg is
+begin
+	process (clock, clear)
+	begin 
+			if(clear='1') then
+				Q<=(others=>'0');
+			elsif(clock'event and clock='1') then
+			if(enable='1') then
+				Q<=data;
+			end if;
+		end if;
+	end process;
+end behaviour;

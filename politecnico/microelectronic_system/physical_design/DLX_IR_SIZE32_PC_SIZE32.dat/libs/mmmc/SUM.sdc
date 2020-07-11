@@ -1,0 +1,5 @@
+XSym
+0047
+4528d25c964c8abcb8075649e8d81835
+/home/ms18.18/dlx_final/physical_design/SUM.sdc
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DLX_IR_SIZE32_PC_SIZE32
+Version: Z-2007.03-SP1
+Date   : Wed Jul  4 21:40:54 2018
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DP_I/reg_alu_out/Q_reg[31]
+              (rising edge-triggered flip-flop)
+  Endpoint: dram_ADD[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX_IR_SIZE32_PC_SIZE32
+                     5K_hvratio_1_4        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  DP_I/reg_alu_out/Q_reg[31]/CK (DFFR_X1)                 0.00       0.00 r
+  DP_I/reg_alu_out/Q_reg[31]/Q (DFFR_X1)                  0.10       0.10 r
+  DP_I/reg_alu_out/Q[31] (registro_N32_5)                 0.00       0.10 r
+  DP_I/ADD_mem[31] (datapath_reg_size32)                  0.00       0.10 r
+  dram_ADD[31] (out)                                      0.00       0.11 r
+  data arrival time                                                  0.11
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

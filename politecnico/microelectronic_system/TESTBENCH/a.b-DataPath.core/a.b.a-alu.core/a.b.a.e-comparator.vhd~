@@ -1,0 +1,36 @@
+Library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+--entity declaration with port definitions
+entity compare is
+generic (N: integer:=32);
+port(    num1 : in std_logic_vector(N-1 downto 0);  --input 1
+         num2 :      in std_logic_vector(N-1 downto 0);  --input 2
+         less :              out std_logic;   -- indicates first number is small
+         equal :          out std_logic;   -- both are equal
+         greater_or_equal :   out std_logic    -- indicates first number is bigger
+);
+end compare;
+
+--architecture of entity
+architecture Behavioral of compare is
+begin
+
+process(num1,num2)
+begin    -- process starts with a 'begin' statement
+if (num1 > num2 ) then  --checking whether num1 is greater than num2
+less <= '0';
+--equal <= '0';
+greater_or_equal <= '1';
+elsif (num1 < num2) then    --checking whether num1 is less than num2
+less <= '1';
+--equal <= '0';
+greater_or_equal <= '0';
+else     --checking whether num1 is equal to num2
+less <= '0';
+--equal <= '1';
+greater_or_equal <= '1';
+end if;
+end process;   -- process ends with a 'end process' statement
+
+end Behavioral;

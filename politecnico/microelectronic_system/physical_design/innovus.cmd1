@@ -1,0 +1,136 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Jul  5 17:21:41 2018                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+#@(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+#@(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+#@(#)CDS: CPE v17.11-s095
+#@(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+set defHierChar /
+set delaycal_input_transition_delay 0.1ps
+set fpIsMaxIoHeight 0
+set init_gnd_net gnd
+set init_mmmc_file Default.view
+set init_oa_search_lib {}
+set init_pwr_net vdd
+set init_verilog dlx.v
+set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+init_design
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 1 0.6 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {gnd vdd} -type core_rings -follow core -layer {top metal9 bottom metal9 left metal10 right metal10} -width {top 0.8 bottom 0.8 left 0.8 right 0.8} -spacing {top 0.8 bottom 0.8 left 0.8 right 0.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe -nets {gnd vdd} -layer metal10 -direction vertical -width 0.8 -spacing 0.8 -set_to_set_distance 20 -start_from left -start_offset 15 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal10 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal10 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { gnd vdd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
+setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
+setPlaceMode -fp false
+placeDesign
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -spreadDirection clockwise -side Left -layer 1 -spreadType side -pin {{dram_ADD[0]} {dram_ADD[1]} {dram_ADD[2]} {dram_ADD[3]} {dram_ADD[4]} {dram_ADD[5]} {dram_ADD[6]} {dram_ADD[7]} {dram_ADD[8]} {dram_ADD[9]} {dram_ADD[10]} {dram_ADD[11]} {dram_ADD[12]} {dram_ADD[13]} {dram_ADD[14]} {dram_ADD[15]} {dram_ADD[16]} {dram_ADD[17]} {dram_ADD[18]} {dram_ADD[19]} {dram_ADD[20]} {dram_ADD[21]} {dram_ADD[22]} {dram_ADD[23]} {dram_ADD[24]} {dram_ADD[25]} {dram_ADD[26]} {dram_ADD[27]} {dram_ADD[28]} {dram_ADD[29]} {dram_ADD[30]} {dram_ADD[31]}}
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -spreadDirection clockwise -side Left -layer 1 -spreadType side -pin {{dram_DIN[0]} {dram_DIN[1]} {dram_DIN[2]} {dram_DIN[3]} {dram_DIN[4]} {dram_DIN[5]} {dram_DIN[6]} {dram_DIN[7]} {dram_DIN[8]} {dram_DIN[9]} {dram_DIN[10]} {dram_DIN[11]} {dram_DIN[12]} {dram_DIN[13]} {dram_DIN[14]} {dram_DIN[15]} {dram_DIN[16]} {dram_DIN[17]} {dram_DIN[18]} {dram_DIN[19]} {dram_DIN[20]} {dram_DIN[21]} {dram_DIN[22]} {dram_DIN[23]} {dram_DIN[24]} {dram_DIN[25]} {dram_DIN[26]} {dram_DIN[27]} {dram_DIN[28]} {dram_DIN[29]} {dram_DIN[30]} {dram_DIN[31]}}
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -spreadDirection clockwise -side Left -layer 1 -spreadType side -pin {{dram_DOUT[0]} {dram_DOUT[1]} {dram_DOUT[2]} {dram_DOUT[3]} {dram_DOUT[4]} {dram_DOUT[5]} {dram_DOUT[6]} {dram_DOUT[7]} {dram_DOUT[8]} {dram_DOUT[9]} {dram_DOUT[10]} {dram_DOUT[11]} {dram_DOUT[12]} {dram_DOUT[13]} {dram_DOUT[14]} {dram_DOUT[15]} {dram_DOUT[16]} {dram_DOUT[17]} {dram_DOUT[18]} {dram_DOUT[19]} {dram_DOUT[20]} {dram_DOUT[21]} {dram_DOUT[22]} {dram_DOUT[23]} {dram_DOUT[24]} {dram_DOUT[25]} {dram_DOUT[26]} {dram_DOUT[27]} {dram_DOUT[28]} {dram_DOUT[29]} {dram_DOUT[30]} {dram_DOUT[31]}}
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -spreadDirection clockwise -side Left -layer 1 -spreadType side -pin {dram_RD dram_WR}
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -spreadDirection clockwise -side Top -layer 1 -spreadType side -pin {Clk Rst}
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -spreadDirection clockwise -side Right -layer 1 -spreadType side -pin {{iram_Addr[0]} {iram_Addr[1]} {iram_Addr[2]} {iram_Addr[3]} {iram_Addr[4]} {iram_Addr[5]} {iram_Addr[6]} {iram_Addr[7]} {iram_Addr[8]} {iram_Addr[9]} {iram_Addr[10]} {iram_Addr[11]} {iram_Addr[12]} {iram_Addr[13]} {iram_Addr[14]} {iram_Addr[15]} {iram_Addr[16]} {iram_Addr[17]} {iram_Addr[18]} {iram_Addr[19]} {iram_Addr[20]} {iram_Addr[21]} {iram_Addr[22]} {iram_Addr[23]} {iram_Addr[24]} {iram_Addr[25]} {iram_Addr[26]} {iram_Addr[27]} {iram_Addr[28]} {iram_Addr[29]} {iram_Addr[30]} {iram_Addr[31]} {iram_Dout[0]} {iram_Dout[1]} {iram_Dout[2]} {iram_Dout[3]} {iram_Dout[4]} {iram_Dout[5]} {iram_Dout[6]} {iram_Dout[7]} {iram_Dout[8]} {iram_Dout[9]} {iram_Dout[10]} {iram_Dout[11]} {iram_Dout[12]} {iram_Dout[13]} {iram_Dout[14]} {iram_Dout[15]} {iram_Dout[16]} {iram_Dout[17]} {iram_Dout[18]} {iram_Dout[19]} {iram_Dout[20]} {iram_Dout[21]} {iram_Dout[22]} {iram_Dout[23]} {iram_Dout[24]} {iram_Dout[25]} {iram_Dout[26]} {iram_Dout[27]} {iram_Dout[28]} {iram_Dout[29]} {iram_Dout[30]} {iram_Dout[31]}}
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -spreadDirection clockwise -side Right -layer 1 -spreadType side -pin {{iram_Addr[0]} {iram_Addr[1]} {iram_Addr[2]} {iram_Addr[3]} {iram_Addr[4]} {iram_Addr[5]} {iram_Addr[6]} {iram_Addr[7]} {iram_Addr[8]} {iram_Addr[9]} {iram_Addr[10]} {iram_Addr[11]} {iram_Addr[12]} {iram_Addr[13]} {iram_Addr[14]} {iram_Addr[15]} {iram_Addr[16]} {iram_Addr[17]} {iram_Addr[18]} {iram_Addr[19]} {iram_Addr[20]} {iram_Addr[21]} {iram_Addr[22]} {iram_Addr[23]} {iram_Addr[24]} {iram_Addr[25]} {iram_Addr[26]} {iram_Addr[27]} {iram_Addr[28]} {iram_Addr[29]} {iram_Addr[30]} {iram_Addr[31]} {iram_Dout[0]} {iram_Dout[1]} {iram_Dout[2]} {iram_Dout[3]} {iram_Dout[4]} {iram_Dout[5]} {iram_Dout[6]} {iram_Dout[7]} {iram_Dout[8]} {iram_Dout[9]} {iram_Dout[10]} {iram_Dout[11]} {iram_Dout[12]} {iram_Dout[13]} {iram_Dout[14]} {iram_Dout[15]} {iram_Dout[16]} {iram_Dout[17]} {iram_Dout[18]} {iram_Dout[19]} {iram_Dout[20]} {iram_Dout[21]} {iram_Dout[22]} {iram_Dout[23]} {iram_Dout[24]} {iram_Dout[25]} {iram_Dout[26]} {iram_Dout[27]} {iram_Dout[28]} {iram_Dout[29]} {iram_Dout[30]} {iram_Dout[31]}}
+setPinAssignMode -pinEditInBatch false
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS
+optDesign -postCTS -hold
+getFillerMode -quiet
+addFiller -cell FILLCELL_X8 FILLCELL_X4 FILLCELL_X32 FILLCELL_X2 FILLCELL_X16 FILLCELL_X1 -prefix FILLER
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+setAnalysisMode -analysisType onChipVariation
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+optDesign -postRoute -hold
+saveDesign DLX_IR_SIZE32_PC_SIZE32
+win
+reset_parasitics
+extractRC
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix DLX_IR_SIZE32_PC_SIZE32_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix DLX_IR_SIZE32_PC_SIZE32_postRoute -outDir timingReports
+get_time_unit
+report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+verifyConnectivity -type all -error 1000 -warning 50
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+reportGateCount -level 5 -limit 100 -outfile DLX_IR_SIZE32_PC_SIZE32.gateCount
+saveNetlist DLX_IR_SIZE32_PC_SIZE32.v
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network DLX_IR_SIZE32_PC_SIZE32.sdf

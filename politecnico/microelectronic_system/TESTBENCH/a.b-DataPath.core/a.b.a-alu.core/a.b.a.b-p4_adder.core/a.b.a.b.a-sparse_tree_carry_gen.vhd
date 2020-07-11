@@ -1,0 +1,93 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity sparse_tree_carry_gen is
+  
+  generic (
+    N : integer := 5);
+  port (
+    A    : in  std_logic_vector(2**N -1 downto 0);
+    B    : in  std_logic_vector(2**N -1 downto 0);
+    C0   : in  std_logic;
+    Cout : out std_logic_vector(2**(N)/4-1 downto 0));
+
+end sparse_tree_carry_gen;
+
+architecture beh of sparse_tree_carry_gen is
+  component PG
+    port (
+      A   : in  std_logic;
+      B : in  std_logic;
+      C : in std_logic;
+		D : in std_logic;
+      P : out std_logic;
+      G : out std_logic);
+  end component;
+  
+component sparse_tree_carry_gen_4bits is
+port ( A :  std_logic_vector(3 downto 0);
+		 B : std_logic_vector( 3 downto 0);
+		 c_in:in std_logic;
+		 P, G: out std_logic);
+end component;
+  
+	component GG 
+	 port (A, B, C: in std_logic;
+		GG: out std_logic);
+	 end component;
+	 
+	 
+	 component PGnet is
+	 port( A, B, C: in std_logic;
+		P, G: out std_logic);
+	end component;
+	
+	type matrix is array (N-2 downto 0) of std_logic_vector(2**(N-2)-1 downto 0);
+	signal P : matrix;
+	signal G : matrix;
+
+begin  -- beh
+
+
+  step: for i in 0 to N-2 generate --poi ci penso a dove fermarmi
+
+   step0: if i=0 generate
+		gen0:for j in 0 to 2**(N-2)-1 generate --genero 8 blocchi da 4biits ciascuno, ho in usicta 8 p e 8gA(4+j*4 downto 4*j), B(4+j*4 downto 4*j),
+			pg4 : sparse_tree_carry_gen_4bits port map (A ((j*4)+3	downto (j*4)), B((j*4)+3 downto (j*4)),c0, P(i)(j),G(i)(j)); 
+		end generate gen0;
+	end generate step0;
+	
+	step1: if i=1 generate		
+		gen1: for k in 0 to 2**(N-3)-1 generate
+		pg1 : PG port map (A=>P(i-1)((k*2)+1),B=>P(i-1)(k*2),C=>G(i-1)((k*2)+1),D=>G(i-1)(k*2),P=>P(i)((2*k)+1),G=>G(i)((2*k)+1));
+		 P(i)(2*k)<=P(i-1)(2*k);
+		 G(i)(2*k)<=G(i-1)(2*k);
+		end generate gen1;
+		end generate step1;
+		
+  steps: if i>1 generate
+			genp: for l in 0 to 2**(N-(2+i))-1 generate --quante volte reiterare il blocco
+			
+				gg: for m in (2**(i)*l) to (2**(i)*l)+(2**(i-1)-1) generate
+				P(i)(m)<=P(i-1)(m);
+				G(i)(m)<=G(i-1)(m);
+				end generate gg;
+
+
+				ggk: for n in 2**(i)*l+2**(i-1) to (2**(i)*l+2**(i-1))+(2**(i-1)-1) generate 
+				 	ggh: for h in 1 to 2 generate 
+				 	gen2: PG port map (P(i-1)(n), P(i-1)(n-h), G(i-1)(n), G(i-1)(n-h), P(i)(n), G(i)(n));
+					end generate ggh;
+				end generate ggk;
+			
+
+			
+			end generate genp;
+   end generate steps;
+			
+	end generate step;
+	
+	Cout<=G(N-2);
+		
+end beh;
