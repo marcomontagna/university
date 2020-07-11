@@ -1,0 +1,137 @@
+clear all
+close all
+clc
+signum=@(x) 1*(x>=0)-1*(x<0);
+
+%% HW8
+N=100;
+x=rand(2,N); 
+nr_clusters=5;
+
+%%plot the boundaries and the different classes
+[flag,d]=boundaries(x,N);
+if(flag==0)
+    x(1,N)=0.5;
+    x(2,N)=0.8;
+end
+
+%cluster centers initialization (random, in the region of the class and
+%sufficiently distant from each other)
+c=rand(2,nr_clusters*2);
+i=1;
+while i<nr_clusters+1
+    c(:,i)=rand(2,1);
+    if c(2,i)<(1/5)*sin(10*c(1,i))+0.3 || (c(2,i)-0.8)^2+(c(1,i)-0.5)^2<0.15^2
+        min=100;
+        if i>1
+            for j=1:i-1
+                dist=norm(c(:,i)-c(:,j));
+                if dist<min
+                    min=dist;
+                end
+            end
+            
+            if min>0.2
+                i=i+1;
+            end
+        else
+            i=i+1;
+        end
+    end
+end
+j=1+nr_clusters;
+while j<2*nr_clusters+1
+    c(:,j)=rand(2,1);
+    if ~(c(2,j)<(1/5)*sin(10*c(1,j))+0.3 || (c(2,j)-0.8)^2+(c(1,j)-0.5)^2<0.15^2)
+        min=100;
+        if j>1+nr_clusters
+            for k=1+nr_clusters:j-1
+                dist=norm(c(:,i)-c(:,j));
+                if dist<min
+                    min=dist;
+                end
+            end
+            
+            if min>0.3
+                j=j+1;
+            end
+        else
+            j=j+1;
+        end
+    end
+end
+
+
+%% k-means algorithm for N centers (class C1)
+class=1;
+c(:,(1:nr_clusters))=k_means(x,c(:,(1:nr_clusters)),N,nr_clusters,d,class);
+plot(c(1,1:nr_clusters),c(2,1:nr_clusters),'rs','MarkerFaceColor','red');
+
+%% k-means algorithm for N centers (class C-1)
+class=-1;
+c(:,(nr_clusters+1:2*nr_clusters))=k_means(x,c(:,(nr_clusters+1:2*nr_clusters)),N,nr_clusters,d,class);
+plot(c(1,nr_clusters+1:2*nr_clusters),c(2,nr_clusters+1:2*nr_clusters),'rs','MarkerFaceColor','black');
+drawnow
+
+phi=@(x,c) exp(-(norm(x-c)).^2);
+
+y=zeros(nr_clusters,N);
+w=normrnd(0,1/sqrt(20),1,2*nr_clusters+1); %initial weights
+for i=1:N
+    for j=1:2*nr_clusters
+        y(j,i)=phi(x(:,i),c(:,j));
+    end
+end
+flag=1;
+epoch=1;
+eta=100;
+%%PTA
+while flag==1
+    %%update the weights
+    for i=1:N
+        w=w+eta*(d(i)-signum(w*[1;y(:,i)]))*[1;y(:,i)]';
+    end
+    
+    errors(epoch)=0;
+    %%loop to count the number of misclassifications errors
+    for i=1:N
+        g=signum(w*[1;y(:,i)]);
+        if d(i)~=g
+            errors(epoch)=errors(epoch)+1;
+        end
+    end
+    
+    if epoch>1
+        if errors(epoch)>errors(epoch-1) && eta>0.5 && errors(epoch)<10
+            eta=eta*0.999;
+         elseif errors(epoch)>errors(epoch-1) && errors(epoch)<5
+             eta=5;
+        end
+    end
+    
+    if errors(epoch)>0 %%check condition on the number of errors
+        flag=1;
+    else
+        flag=0;
+    end
+    epoch=epoch+1;
+end
+
+%%sketch of the decision boundary
+figure(2)
+x1=linspace(0,1,2000);
+x2=linspace(0,1,2000);
+y=zeros(2*nr_clusters,1);
+for i=1:2000
+    for j=1:2000
+        for k=1:2*nr_clusters
+            y(k)=phi([x1(i);x2(j)],c(:,k));
+        end
+        g=(w*[1;y]);
+        if abs(g)<1e-3
+            plot(x1(i),x2(j),'bl.','Markersize',2);
+            hold on
+        end
+    end
+end
+%w=[-5979.75348879512,9329.86274899098,-10122.3141498661,-1952.77196095310,-2128.06255591773,14747.4875030455,-3250.36202916068,5439.75236621764,8481.28479657540,14674.0951139305,9450.69130950879,-1738.54480202919,-1037.10158688948,-743.021374103636,-6146.24189031171,5563.87489923217,-13951.8082071648,4194.66362548525,-549.545074136302,-6881.47221232393,-9475.70802812549];
