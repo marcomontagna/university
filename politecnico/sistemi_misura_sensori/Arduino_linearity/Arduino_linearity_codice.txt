@@ -1,0 +1,102 @@
+//macro usate per settare i bit a 1 o 0
+#ifndef sbi //macro  per settare singoli bit a 1 set bit
+#define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit)) 
+#endif 
+
+//parametri misurazione, flag e altre amenita'
+unsigned int lettura=0;
+//parametri linea seriale
+const int BUFFER_SIZE = 10; //ampiezza buffer
+char commandBuffer[BUFFER_SIZE + 1];//spazio da allocare per i caratteri
+int bufferPos = 0; //flag posizione puntatore buffer
+char comando[10] = { 0 };
+
+ void clearBuffer() {//funzione usata per pulire il buffer di ricezione
+
+	for (int i = 0; i<BUFFER_SIZE + 1; i++)
+		commandBuffer[i] = (char)0;//scrive dei caratterri nulli nel buffer di ingresso 
+	bufferPos = 0;
+}
+void clear_comando() {//funzione usata per pulire il valore di comando
+	for (int i = 0; i<10; i++)
+		comando[i] = (char)0;//scrive dei caratterri nulli nel buffer di ingresso 
+}
+//routine usata per salvare i dati in ingresso dalla linea seriale, mi basta definire questa funzione e arduino la lancia in automatico ogni volta che c'e' roba sulla linea seriale
+void serialEvent() {
+	char inChar = Serial.read(); //legge i dati disponibili nel registro di ingresso della linea seriale
+	if (inChar == '\n') {
+		for (int f = 0; f < bufferPos; f++) //3 è la lunghezza delle stringhe di comando
+			comando[f] = commandBuffer[f]; //salvo nella variabile comando il dato ricevuto sulla linea seriale
+		clearBuffer();	//pulisce buffer
+	}
+	else {
+		if (bufferPos<BUFFER_SIZE - 1) {
+			commandBuffer[bufferPos++] = inChar;
+		}
+		else {
+			Serial.print("errore ricezione\n");
+			clearBuffer();
+		}
+	}
+}
+
+void setup() {
+	ADMUX = 0xC5;//abilito riferimento tensione interno, imposto left adjust e seleziono canale A5
+	ADCSRA = 0x87;//abilito ADC, imposto prescaler a 128, freq ad=125kHz, 104us per misura
+	sbi(ADCSRA, ADSC);	//eseguo prima lettura per inizializzare l'adc
+	Serial.begin(115200);//apro linea seriale con 115200bps
+	sbi(ADCSRA, ADIF); //pulisco flag interrupt adc, in verita' non lo pulisco ma funziona tutto uguale, perche'?
+	clearBuffer();  //clean the input buffer
+	delayMicroseconds(1000);
+	sbi(ADCSRA, ADIE); //abilito generazione interrupt ADC, usata per entrare nella ISR dell'ADC
+	//Serial.println(ADCSRA);//dovrebbe essere 87 cioe' 135, in verita' e' sempre 151 ma funziona tutto bene anche se non dovrebbe, perche'?
+	pinMode(LED_BUILTIN, OUTPUT);	//utilizzo il led L montato sulla scheda per debuggare
+	digitalWrite(LED_BUILTIN, LOW);	//inizializzo il led a spento
+}
+
+
+void loop() {
+	if (strcmp(comando, "meas") == 0)
+	{
+		sbi(ADCSRA, ADSC);	//inizia conversione e mi fa saltare nella routine di interrupt
+	}
+	else
+	{
+		if (strcmp(comando, "test_rx") == 0)	//programma test ricezione, fa lampeggiare 3 volte il led
+		{//verifico la ricezione corretta dei dati inviati da C#
+			digitalWrite(LED_BUILTIN, HIGH);
+			delay(800);
+			digitalWrite(LED_BUILTIN, LOW);
+			delay(800);
+			digitalWrite(LED_BUILTIN, HIGH);
+			delay(800);
+			digitalWrite(LED_BUILTIN, LOW);
+			delay(800);
+			digitalWrite(LED_BUILTIN, HIGH);
+			delay(800);
+			digitalWrite(LED_BUILTIN, LOW);
+			clear_comando();
+		}
+		else {
+			if (strcmp(comando, "test_tx") == 0)	//programma test invio dati
+			{
+				for (int conta = 0; conta < 100; conta++)
+				{//stampo dei valori da 0 a 100 col # 
+					Serial.print("#");
+					Serial.println(conta);
+					//delay(10);
+				}
+				clear_comando();
+			}
+		}
+	}
+}
+
+ISR(ADC_vect) //usata per calcolare la tensione, inviare i dati e poi 
+{
+	lettura = ADC;
+	Serial.print("#");
+	Serial.println(lettura);
+	clear_comando();
+//	Serial.flush();
+}

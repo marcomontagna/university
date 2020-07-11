@@ -1,0 +1,137 @@
+unsigned int temperatura=0; //variabile globale in cui salvo lettura adc
+const float R1 = 984.16;
+const float R2 = 2175.2;
+const float RR = 983.8;
+const float Vref = 1.0972;
+const float H = 0.312; //0.311998 valore partitore
+float k_inv = 100;
+
+int flag_tara = 0; //flag di controllo della tara
+float incertezza_postcal = 0;
+
+//parametri linea seriale
+const int BUFFER_SIZE = 10; //ampiezza buffer
+char commandBuffer[BUFFER_SIZE + 1];//spazio da allocare per i caratteri
+int bufferPos = 0; //flag posizione puntatore buffer
+char welcome[] = { "ins tau in ms\n" }; //inserire la costante di tempo in millisecondi separando i decimali col punto e premere invio
+char comando[4] = {};	//non eseguo nessuna operazione
+//routine usata per pulire il buffer di ricezione
+void clearBuffer() {
+	for (int i = 0; i<BUFFER_SIZE + 1; i++)
+		commandBuffer[i] = (char)0;//scrive dei caratterri nulli nel buffer di ingresso 
+	bufferPos = 0;
+}
+
+//routine usata per salvare i dati in ingresso dalla linea seriale, mi basta definire questa funzione e arduino la lancia in automatico ogni volta che c'e' roba sulla linea seriale
+void serialEvent() {
+	char inChar = Serial.read(); //legge i dati disponibili nel registro di ingresso della linea seriale
+	if (inChar == '\n') {
+		for (int f = 0; f < bufferPos; f++) //3 è la lunghezza delle stringhe di comando
+			comando[f] = commandBuffer[f]; //salvo nella variabile comando il dato ricevuto sulla linea seriale
+		
+
+		if (strcmp(commandBuffer, "tar") == 0)
+			flag_tara = 1;
+		clearBuffer();	//pulisce buffer
+	}
+	else {
+		if (bufferPos<BUFFER_SIZE - 1) {
+			commandBuffer[bufferPos++] = inChar;
+		}
+		else {
+			//Serial.print("errore ricezione\n");
+			clearBuffer();
+		}
+	}
+}
+
+void setup() {
+
+	Serial.begin(9600);
+	analogReference(INTERNAL);	//setto riferimento tensione interno
+	temperatura = analogRead(A5);	//lettura fatta solo per inizializzare adc arduino
+	delay(100);
+	temperatura = 0;
+	pinMode(LED_BUILTIN, OUTPUT);
+
+	digitalWrite(LED_BUILTIN, LOW);
+
+}
+
+void loop() {
+	if (strcmp(comando,"mis")==0)
+	{
+	//Serial.println("Codice ADC=");
+	temperatura = analogRead(A5); //leggo valore adc
+	String temp = "#" + String(temperatura);
+	Serial.println(temp); //invio sulla linea seriale il valore letto dall'adc
+	digitalWrite(LED_BUILTIN, HIGH);
+
+	}
+	else if (strcmp(comando, "tar") == 0)
+	{
+		//implementare un qualcosa che converta char vector in float
+		//float t_know = atof(commandbuffer);
+		int k_new = 0;
+		int delta_off_postcal = 2;
+		float vout_precal = 0;
+		int delta_t_know = 1; //è l'incetezza del termoidrometro
+							  //avviare l'ADC, avremo un Vuscita a 25 o 0 gradi che chiameremo Vout_precal
+							  //dobbiamo ricalcolare K (nominalmente = 10 mV/C)
+		temperatura = analogRead(A5); //leggo valore adc
+
+		vout_precal = Vref / 1024 * temperatura / H;
+
+		String temp2 = "#" + String(temperatura);
+		Serial.println(temp2); //invio sulla linea seriale il valore letto dall'adc
+		Serial.println(temp2);
+		flag_tara = 1;
+
+
+
+
+
+
+		digitalWrite(LED_BUILTIN, HIGH);
+	}
+int len = strlen(comando);
+	for (int i=0;i<len;i++)
+	comando[i]= (char)0;
+	delay(2000);//delay usato per ritardare nuovo invio dei dati in questo modo
+	digitalWrite(LED_BUILTIN, LOW);
+	//eseguiamo le misura con una frequenza di 100Hz (una misura ogni 10mS)
+}
+
+
+
+
+
+
+
+
+
+
+/*
+void setup_old() {
+
+	Serial.begin(9600);
+	analogReference(INTERNAL);
+
+	int prova = analogRead(A5);
+	delay(10);
+}
+*/
+/*
+void loop_old() {
+	unsigned int N = analogRead(A5);
+	float tensione_VREF = 1.0972;
+	float H = 0.3133032621;
+	int K = 100;
+	float temperatura = (tensione_VREF / 1024 * N / H) * K - 273.15;
+	Serial.println("temperatura calcolata con arduino= ");
+	Serial.println(temperatura, 7);
+	Serial.println("ADC= ");
+	Serial.println(N);
+	delay(2000);
+}
+*/

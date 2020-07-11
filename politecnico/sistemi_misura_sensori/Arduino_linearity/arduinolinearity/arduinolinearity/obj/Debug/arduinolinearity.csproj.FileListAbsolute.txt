@@ -1,0 +1,2 @@
+c:\users\giuseppe\documents\visual studio 2012\Projects\arduinolinearity\arduinolinearity\bin\Debug\arduinolinearity.exe.config
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_linearity\arduinolinearity\arduinolinearity\bin\Debug\arduinolinearity.exe.config

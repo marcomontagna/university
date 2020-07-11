@@ -1,0 +1,1144 @@
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+29.5164184
+ADC= 
+885
+temperatura calcolata con arduino= 
+29.5164184
+ADC= 
+885
+temperatura calcolata con arduino= 
+29.1744079
+ADC= 
+884
+temperatura calcolata con arduino= 
+29.1744079
+ADC= 
+884
+temperatura calcolata con arduino= 
+29.1744079
+ADC= 
+884
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.8323974
+ADC= 
+883
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.1484375
+ADC= 
+881
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882
+temperatura calcolata con arduino= 
+28.4904174
+ADC= 
+882

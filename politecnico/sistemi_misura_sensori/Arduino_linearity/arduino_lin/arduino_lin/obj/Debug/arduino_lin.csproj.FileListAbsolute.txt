@@ -1,0 +1,21 @@
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\arduino_lin.exe.config
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.csprojResolveAssemblyReference.cache
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.Properties.Resources.resources
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.csproj.GenerateResource.Cache
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.csproj.arduino_lin.exe.config
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.csproj.ResolveComReference.cache
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.Form1.resources
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\arduino_lin.exe
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\arduino_lin.pdb
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\NationalInstruments.Common.dll
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\NationalInstruments.DAQmx.dll
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\NationalInstruments.NiLmClientDLL.dll
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\NationalInstruments.MStudioCLM.dll
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\NationalInstruments.Common.xml
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.exe
+C:\Users\S252781\Desktop\arduino_lin\arduino_lin\obj\Debug\arduino_lin.pdb
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_linearity\arduino_lin\arduino_lin\bin\Debug\arduino_lin.exe.config
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_linearity\arduino_lin\arduino_lin\obj\Debug\arduino_lin.csproj.ResolveComReference.cache
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_linearity\arduino_lin\arduino_lin\obj\Debug\arduino_lin.exe
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_linearity\arduino_lin\arduino_lin\obj\Debug\arduino_lin.pdb

@@ -1,0 +1,295 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Emanuele Valpreda\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Sampler
+Ecounter
+Z0 w1513856534
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Emanuele Valpreda\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Uart rx
+Z5 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd
+Z6 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd
+l0
+L5
+VIT1;zLH0BWdk=gAJ5@2e:0
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1516285393.676000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd|
+Z10 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 _SJ[B1D1E=E[ELoVNRb440
+!i10b 1
+Abehaviour
+R1
+R2
+R3
+DEx4 work 7 counter 0 22 IT1;zLH0BWdk=gAJ5@2e:0
+l16
+L15
+VHEXWi<K[0mFeRk=Rbj4k:1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 LiBGLMfIBCoYoBk>>GDXa1
+!i10b 1
+Ed_ff_uart
+Z13 w1516270182
+R2
+R3
+R4
+Z14 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd
+Z15 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd
+l0
+L6
+V^9n5hd@FYCje@8SO5z`DQ2
+R7
+32
+Z16 !s108 1516285393.879000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd|
+Z18 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd|
+R11
+R12
+!s100 7bm`lHH7C4Ja?^B_KDXJV1
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 9 d_ff_uart 0 22 ^9n5hd@FYCje@8SO5z`DQ2
+l13
+L11
+VVVkUaMjbz]DOHcXY_=cB53
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 FCn2S>h?a:gAN_[S5LOYU1
+!i10b 1
+Edata_register
+Z19 w1515677894
+R2
+R3
+R4
+Z20 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd
+Z21 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd
+l0
+L3
+V9OgjD>M=kH9P>mKJ6aT5U1
+!s100 CnJfgB7Ha@LljajE1?0oI2
+R7
+32
+!i10b 1
+Z22 !s108 1516285394.219000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd|
+Z24 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd|
+R11
+R12
+Abehavior
+R2
+R3
+Z25 DEx4 work 13 data_register 0 22 9OgjD>M=kH9P>mKJ6aT5U1
+l12
+L11
+Z26 V=:n_Mhe:lYK8D5z7<dcH^3
+Z27 !s100 EcP6el_8:9h4dz:`NaHdl2
+R7
+32
+!i10b 1
+R22
+R23
+R24
+R11
+R12
+Eshift_reg
+Z28 w1516269953
+R1
+R2
+R3
+R4
+Z29 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd
+Z30 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd
+l0
+L5
+V?3GFKYmXLIICSfe^6j@[^3
+R7
+32
+Z31 !s108 1516285394.056000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd|
+Z33 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd|
+R11
+R12
+!s100 Hh5E@1kQmQWlXA]@;8JE53
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 9 shift_reg 0 22 ?3GFKYmXLIICSfe^6j@[^3
+l14
+L12
+Vc@<6UYOR0NK7WicglBg?c3
+!s100 >8zRCOje7KmEZ1XUH]>[10
+R7
+32
+R31
+R32
+R33
+R11
+R12
+!i10b 1
+Etestbench
+Z34 w1516285390
+R1
+R2
+R3
+R4
+Z35 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart rx/test.vhd
+Z36 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart rx/test.vhd
+l0
+L5
+VOmh88:`DRF6MS__FQB4mE3
+R7
+32
+Z37 !s108 1516285392.995000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart rx/test.vhd|
+Z39 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart rx/test.vhd|
+R11
+R12
+!s100 ?amMEXPoGfPkW1SfKnEJO0
+!i10b 1
+Abeh
+R1
+R2
+R3
+DEx4 work 9 testbench 0 22 Omh88:`DRF6MS__FQB4mE3
+l24
+L9
+Vmzn<lQnXSozCaMLKFJS2?1
+R7
+32
+R37
+R38
+R39
+R11
+R12
+!s100 7ABLfW`n`?>IYeeV8<]S23
+!i10b 1
+Euart_rx
+Z40 w1516283894
+R2
+R3
+R4
+Z41 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd
+Z42 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd
+l0
+L4
+VP?5g@LJc@6EzCPoWLo?<a2
+R7
+32
+Z43 !s108 1516285393.147000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd|
+Z45 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd|
+R11
+R12
+!s100 `8gm5697L32`TL^m9RO3A2
+!i10b 1
+Alink
+R2
+R3
+DEx4 work 7 uart_rx 0 22 P?5g@LJc@6EzCPoWLo?<a2
+l48
+L14
+V0jD1:hSb[k7k^Z;8kzGhJ2
+R7
+32
+R43
+R44
+R45
+R11
+R12
+!s100 Da``eH2@ZcfkjcLnGKQmV2
+!i10b 1
+Euart_rx_cu
+Z46 w1516283834
+R1
+R2
+R3
+R4
+Z47 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd
+Z48 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd
+l0
+L5
+VA`BT7bJOWDSZ3bP=aC26b1
+R7
+32
+Z49 !s108 1516285393.296000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd|
+Z51 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd|
+R11
+R12
+!s100 >FPW1BW=9N<BJ_Fhm47M`0
+!i10b 1
+Amaster_behave
+R1
+R2
+R3
+DEx4 work 10 uart_rx_cu 0 22 A`BT7bJOWDSZ3bP=aC26b1
+l24
+L21
+VZmYh>;jCE<U3k=WOa]8il0
+R7
+32
+R49
+R50
+R51
+R11
+R12
+!s100 mWk=`MUTbh`_k?Jb?MSa?1
+!i10b 1
+Euart_rx_datapath
+R46
+R1
+R2
+R3
+R4
+Z52 8C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd
+Z53 FC:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd
+l0
+L5
+VLT9kH=hboAln6JRW`KbGT1
+R7
+32
+Z54 !s108 1516285393.448000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd|
+Z56 !s107 C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd|
+R11
+R12
+!s100 :O[=4je<aGfmQZGODgmnH2
+!i10b 1
+Apath
+R1
+R2
+R3
+DEx4 work 16 uart_rx_datapath 0 22 LT9kH=hboAln6JRW`KbGT1
+l59
+L21
+V=QMc[N:^lJ8;VA^C6l>aM1
+R7
+32
+R54
+R55
+R56
+R11
+R12
+!s100 _HQAWK9GTO?GH[SaO2<EY2
+!i10b 1

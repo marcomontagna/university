@@ -1,0 +1,84 @@
+ % QUESTE SONO COSE PER FRNACESCA IL VERO CODICE è DOPO
+% nPoint sono il numero dei campioni
+ 
+% nPoints=30;%%numero campioni
+% cose di scilab 
+% startParam=f0;
+% [param]=lsqcurvefit(modelSin, startParam, samples, nPoints); %%//prende il risultato di modelSin lo eleva al quadrato, ne fa la sommatoria per tutti i valori di sample e minimizza il risultato e restituisce la f A B C
+% [ABC,yStim]=compSin(samples,stim)%% // non ho capito esattamente cosa fa, dovrebbe tirare fuori lambda  e il valore atteso che e' salvato in ystim
+% [residui]=samples-yStim ;%%//calcolo dei residui
+% 
+% 
+% function [e]=modelSin(p, nP) 
+% [ABD,s]=compSin(samples,p); 
+% e=s-samples; %differenza tra valori attesi e valori misurati
+% end
+% 
+% function [ABC, s]=compSin(samples, p) 
+% frequency=p; 
+% omega=2*pi*frequency; 
+% n=size(samples,1) ;
+% U=zeros(n,3); 
+% U(:,1)=sin(omega*t); 
+% U(:,2)=cos(omega*t); 
+% U(:,3)=1; 
+% ABC=U\samples; %ABC=lambda
+% s=U*ABC; %valori attesi
+% end
+
+%%%%%%%%%%%%%%%%%%% INIZIO CODICE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+f0=60;
+%k=950/2*10^-3 %ampiezza sinusoide %in realtà questi due parametri non ci
+%servono
+%phi=0; %fase sinusoide
+%C= 500*10^-3;
+fc=125000;
+nPoints=30;%numero campioni
+samples=[1 2 3 1 2 3 1 2 3 1 2 3 1 2 3 1 2 3 1 2 3 1 2 3 1 2 3 1 2 3];%samples=ydata
+t = [0 : 1/fc : (nPoints-1)*1/fc]; %scelgo i delta_t ogni quanto campioni, e in totale ho 30 campioni
+
+%%%%%%%%%%%%%%%%%primo metodo conosco la frequenza e mi calcolo U
+%  omega=2*pi*f0; 
+%  U=zeros(nPoints,3); %U è xdata 
+%  U(:,1)=sin(omega*t); 
+%  U(:,2)=cos(omega*t); 
+%  U(:,3)=1; 
+%  ABC=U\samples' %ABC=lambda
+%  s=U*ABC; %valori attesi
+%  e=s-samples; %residui
+
+
+% %%%%%%%%%%%secondo metodo non conosco la frequenza diventano 4 le incognite
+% % %parametri iniziali:
+%  ABC =[2.9480 -0.1290 2.0000];
+%  startParam=[ABC(1) ABC(2) ABC(3) f0];
+% % i parametri iniziali li calcolo prendendo i valori che escono di A B C e
+% % frequenza dal metodo 1
+% 
+%  fun = @(x,t)x(1)*sin(x(4)/(2*pi)*t)+x(2)*cos(x(4)/(2*pi)*t)+x(3);
+%  [param]=lsqcurvefit(fun, startParam, t, samples)
+
+
+% metodo tre- uso il metodo due per calcolare la frequenza e invece il
+% metodo uno per calcolare A B C
+% devo fare una funzione dove mi arriva in ingresso una f0 iniziale calcola
+% A B C con il metodo uno e poi riusa la formula del metodo due, tira fuori y' fa la
+% differenza minima attraverso lsqcurvefit
+% in fun3 devo stare attenta ai sample, perchè entrano ma bisogna stare
+% attenti
+
+F=fun3(f0, t, samples);
+
+[freq]=lsqcurvefit(F, f0, t, samples)
+
+function F=fun3(f0, t, samples)
+ omega=2*pi*f0; 
+ U=zeros(30,3); %U è xdata 
+ U(:,1)=sin(omega*t); 
+ U(:,2)=cos(omega*t); 
+ U(:,3)=1; 
+ ABC=U\samples'; %ABC=lambda
+ % e così ho fatto il metodo uno e ho trovato A B C 
+ F=@(x,t)ABC(1)*sin(x/(2*pi)*t)+ABC(2)*cos(x/(2*pi)*t)+ABC(3);
+end

@@ -1,0 +1,130 @@
+Opening port
+Port open
+ins tau in ms
+
+dato ricevuto: 963.17
+case 3
+misura 1
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9799803uF
+case 3
+misura 2
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9803871uF
+case 3
+misura 3
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9802968uF
+case 3
+misura 4
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9799208uF
+case 3
+misura 5
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9807114uF
+case 3
+misura 6
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9802412uF
+case 3
+misura 7
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9801415uF
+case 3
+misura 8
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9800820uF
+case 3
+misura 9
+metodo 2 misure, valore=1.0012311uF
+metodo reg, valore=0.9804062uF
+case 3
+misura 10
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9802277uF
+case 3
+misura 11
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9801663uF
+case 3
+misura 12
+metodo 2 misure, valore=1.0012311uF
+metodo reg, valore=0.9804677uF
+case 3
+misura 13
+metodo 2 misure, valore=1.0001974uF
+metodo reg, valore=0.9807826uF
+case 3
+misura 14
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9802545uF
+case 3
+misura 15
+metodo 2 misure, valore=1.0012311uF
+metodo reg, valore=0.9801433uF
+case 3
+misura 16
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9798441uF
+case 3
+misura 17
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9806538uF
+case 3
+misura 18
+metodo 2 misure, valore=1.0012311uF
+metodo reg, valore=0.9804541uF
+case 3
+misura 19
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9802890uF
+case 3
+misura 20
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9804772uF
+case 3
+misura 21
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9797177uF
+case 3
+misura 22
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9802412uF
+case 3
+misura 23
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9803198uF
+case 3
+misura 24
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9796525uF
+case 3
+misura 25
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9802259uF
+case 3
+misura 26
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9805905uF
+case 3
+misura 27
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9798327uF
+case 3
+misura 28
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9803466uF
+case 3
+misura 29
+metodo 2 misure, valore=0.9995246uF
+metodo reg, valore=0.9799208uF
+case 3
+misura 30
+metodo 2 misure, valore=0.9984933uF
+metodo reg, valore=0.9801990uF
+2 misure Media=0.9992590 uF
+2 misure Scarto tipo= 0.0009457 uF
+Reg Media= 0.9802325 uF
+Port close
+Reg Scarto tipo= 0.0002816 uF

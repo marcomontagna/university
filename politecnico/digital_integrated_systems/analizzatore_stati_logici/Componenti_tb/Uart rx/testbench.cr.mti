@@ -1,0 +1,70 @@
+{C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_rx_CU
+-- Compiling architecture Master_Behave of Uart_rx_CU
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture behaviour of counter
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart rx/test.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart rx/test.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench
+-- Compiling architecture beh of testbench
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity UART_RX
+-- Compiling architecture link of UART_RX
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DATA_REGISTER
+-- Compiling architecture BEHAVIOR of DATA_REGISTER
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity D_FF_UART
+-- Compiling architecture behavior of D_FF_UART
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_rx_datapath
+-- Compiling architecture path of Uart_rx_datapath
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Shift_reg
+-- Compiling architecture Behavior of Shift_reg
+
+} {} {}}

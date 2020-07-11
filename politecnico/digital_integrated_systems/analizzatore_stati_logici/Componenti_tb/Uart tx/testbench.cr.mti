@@ -1,0 +1,54 @@
+{C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_datapath_PISO.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_datapath_PISO.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_datapath_PISO
+-- Compiling architecture path of Uart_datapath_PISO
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture behaviour of counter
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg_PISO.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg_PISO.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Shift_reg_PISO
+-- Compiling architecture Behavior of Shift_reg_PISO
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart tx/testbench_TX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Uart tx/testbench_TX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench_TX
+-- Compiling architecture beh of testbench_TX
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_CU_TX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_CU_TX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_CU_TX
+-- Compiling architecture Master_Behave of Uart_CU_TX
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_TX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_TX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity UART_TX
+-- Compiling architecture link of UART_TX
+
+} {} {}}

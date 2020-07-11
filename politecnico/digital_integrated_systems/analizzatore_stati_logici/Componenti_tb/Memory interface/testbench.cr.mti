@@ -1,0 +1,63 @@
+{C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/COUNTER_NBIT.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/COUNTER_NBIT.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity COUNTER_NBIT
+-- Compiling architecture BEHAVIOR of COUNTER_NBIT
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Memory_Interface.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\Emanuele Valpreda\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Analizzatore di stati logici\Memory_Interface.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Memory_Interface
+-- Compiling architecture structural of Memory_Interface
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DATA_REGISTER
+-- Compiling architecture BEHAVIOR of DATA_REGISTER
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/FLIP_FLOP_D.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/FLIP_FLOP_D.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FLIP_FLOP_D
+-- Compiling architecture BEHAVIOR of FLIP_FLOP_D
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Memory interface/DUT_handler.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\Emanuele Valpreda\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Memory interface\DUT_handler.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity DUT_handler
+-- Compiling architecture BEH of DUT_handler
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/TRI_STATE.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/TRI_STATE.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TRI_STATE
+-- Compiling architecture BEHAVIOR of TRI_STATE
+
+} {} {}} {C:/Users/Emanuele Valpreda/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Memory interface/Mem_int_tb.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\Emanuele Valpreda\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Memory interface\Mem_int_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mem_int_tb
+-- Compiling architecture TESTBENCH of Mem_int_tb
+
+} {} {}}

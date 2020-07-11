@@ -1,0 +1,205 @@
+*
+ * (C) Politecnico di Torino
+ * Questo materiale è distribuito gratuitamente ad esclusivo 
+ * uso degli allievi del Politecnico di Torino per la 
+ * preparazione all’esame. 
+ * Ogni altro uso sia commerciale sia divulgativo 
+ * è espressamente vietato senza il consenso scritto dell’autore
+*/
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+//using System.Char;
+using System.IO.Ports;
+using System.Threading;
+
+namespace SerialLineUseManual
+{
+    public partial class SerialLineUseManual : Form
+    {
+        SerialPort serialPortInstrument;                                    //oggetto PortaSeriale
+        String globalReceivedChars;                                         //stringa per immagazzinare i dati ricevuti da HardWINO
+        double temperatura_calibrazione = 25; //temperatura di calibrazione
+        int adc = 500;
+        double k = 0.01;
+        double resistenza_1 = 984.164;
+        double resistenza_2 = 2170.22;
+        double vref = 1.0972;
+        double temperatura = 0;
+        int calibrato = 0;
+        int adc_taratura =888; // default
+        double incertezza = 0;
+
+        public SerialLineUseManual()                                        //default
+        {
+            InitializeComponent();
+        }
+
+        private void SerialLineUseManual_Load(object sender, EventArgs e)   //ne so quanto voi
+        {
+
+        }
+
+        private void buttonOpenClose_Click(object sender, EventArgs e)      //pulsante OpenSetialLine
+        {
+            if (serialPortInstrument == null)
+            {
+                serialPortInstrument = new SerialPort();
+                serialPortInstrument.DataReceived +=
+                    new System.IO.Ports.SerialDataReceivedEventHandler
+                        (this.serialPortInstrument_DataReceived);
+            }
+            if (!serialPortInstrument.IsOpen)
+            {
+                serialPortInstrument.PortName = "COM4";
+                serialPortInstrument.BaudRate = 9600;
+                serialPortInstrument.Parity = Parity.None;
+                serialPortInstrument.StopBits = StopBits.One;
+                serialPortInstrument.DataBits = 8;
+
+                serialPortInstrument.DtrEnable = true;
+                serialPortInstrument.Handshake = Handshake.None;
+                //serialPortInstrument.Handshake = Handshake.RequestToSend;
+                //serialPortInstrument.Handshake = Handshake.XOnXOff;
+                serialPortInstrument.ReceivedBytesThreshold = 1;
+                serialPortInstrument.Open();                                
+                this.buttonSend.Enabled = true;                             //disabilito i pulsanti Send e Cal
+                this.buttonCal.Enabled = true;                              //
+                this.buttonOpenClose.Text = "Close";
+            }
+            else {                                                          //disabilito i pulsanti Send, Cal, attivo Open
+                serialPortInstrument.Close();
+                this.buttonSend.Enabled = false;
+                this.buttonCal.Enabled = false;
+                this.buttonOpenClose.Text = "Open";
+            }
+            
+
+        }
+    
+         private void serialPortInstrument_DataReceived(object sender, SerialDataReceivedEventArgs e) //gestione della conessione HardWINNO ---> PC
+        {
+            //manage received data
+            int lfPosition;
+            int ashPosition;
+            String oneLine;
+            if (e.EventType == SerialData.Chars)
+            {
+                globalReceivedChars = globalReceivedChars + 
+                    serialPortInstrument.ReadExisting();
+                //check is a delimiter i.e. a LF has arrived
+                lfPosition = globalReceivedChars.IndexOf("\n");
+                //ashPosition = globalReceivedChars.IndexOf("#");
+                if (lfPosition>0)
+                {
+
+                    //extract the message
+
+                    oneLine = globalReceivedChars.Substring(1, lfPosition);               //0
+                                                                                          //process the message
+                    if (globalReceivedChars[0] == '#')
+                        processThisLine(oneLine);
+                    //'remove the message from the buffer
+                    globalReceivedChars = globalReceivedChars.Substring(lfPosition + 1);
+                }
+            }
+
+
+        }
+         private void processThisLine(String line)                                   //funzione processThisLine chiamata nella funzione serialPortInstrument_DataReceived
+        {
+            //for now do nothing but show the answer
+
+            AppendATextCrossThread(textBoxDataReceived, ">> " + line + "\n");
+            
+            adc = (int)(Convert.ToInt16(line));
+            if (calibrato == 0)
+            {
+                temperatura = (vref / 1024 * adc * (resistenza_1 + resistenza_2) / resistenza_1) / k - 273.15;
+                AppendATextCrossThread(textBoxDataReceived, ">> TEMPERATURA_PRECAL = " + temperatura + "\n");
+                incertezza = adc / (1024 * k) * (resistenza_2 / resistenza_1 + 1) * 5.089e-5 + vref/(1024*k)*(resistenza_2/resistenza_1+1)*2 + vref*adc/(1024*k*resistenza_1)*0.316 + vref*adc*resistenza_2*1024*k/((resistenza_1*1024*k)* (resistenza_1 * 1024 * k))*0.1086 + 6;
+                AppendATextCrossThread(textBoxDataReceived, ">> INCERTEZZA_PRECAL = " + incertezza + "\n");
+            }
+            if (calibrato == 1)
+            {
+                adc_taratura = adc;
+                calibrato = 2;
+            }
+            if (calibrato == 2)
+            {
+                temperatura = adc / adc_taratura * temperatura_calibrazione - 273.15;
+                AppendATextCrossThread(textBoxDataReceived, ">> TEMPERATURA_POSTCAL = " + temperatura + "\n");
+                incertezza = 1 / adc_taratura * 2 + adc / ((adc_taratura) ^ 2) * 2 + adc / adc_taratura * (0.005*(temperatura_calibrazione-273.15)+0.1) + 2;
+                AppendATextCrossThread(textBoxDataReceived, ">> INCERTEZZA_POSTCAL = " + incertezza + "\n");
+            }
+
+
+
+        }
+
+         delegate void AppendTextCallback(TextBox ctl, string text);                 //delegato che è usato dalla funzione AppendATextCrossThread, in quest'utiltima diventa una copia stessa della funzione in cui è usato il delegato
+                                                                                     //è una roba perversa, ma geniale, o meglio, è perversa e stop! PDF per saperne di più
+        private void AppendATextCrossThread(TextBox ctl, string text)
+        {
+            // InvokeRequired compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (ctl.InvokeRequired)
+            {
+                //create the callback object and invoke it
+                AppendTextCallback d = 
+                    new AppendTextCallback(AppendATextCrossThread);
+                this.Invoke(d, new object[] { ctl, text });                         //E' qua che chiedo umilmente al thread SerialLine di eseguire AppendATextCrossoThread nel thread grafico
+            }
+            else
+            {
+                ctl.Text = ctl.Text + "\r\n" + text;
+
+            }
+        }
+
+        private void buttonSend_Click(object sender, EventArgs e)               //pulsante per inviare adc, il comando (da cambiare) perchè HardWINDOWS esegua la misura
+        {
+            textBoxMessage.AppendText(" Sending adc");
+            serialPortInstrument.Write("mis\n");
+            Application.DoEvents();
+
+         }
+
+        private void textBoxMessage_TextChanged(object sender, EventArgs e)     //Casella su cui stampiamo durante il sending dei dati a ONIUDRA dal PC
+        {
+
+        }
+
+        private void textBoxDataReceived_TextChanged(object sender, EventArgs e)       //Casella su cui stampiamo i dati ricevuti da ARDUINO!
+        {
+
+        }
+
+        private void buttonCal_Click(object sender, EventArgs e)                //pulsante per inviare cal, il comando (da cambiare) perchè XXXUINO esegua la calibrazione
+        {
+            calibrato = 1;
+            temperatura_calibrazione = Convert.ToDouble(textBox_temp.Text);
+            textBoxMessage.AppendText(" Sending cal");
+            serialPortInstrument.Write("tar\n");
+            Application.DoEvents();
+
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_temp_TextChanged(object sender, EventArgs e)
+        {
+        }
+    }
+
+}

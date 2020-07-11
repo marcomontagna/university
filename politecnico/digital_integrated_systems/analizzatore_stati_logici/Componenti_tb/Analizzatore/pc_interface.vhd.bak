@@ -1,0 +1,265 @@
+-- pc interface
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY pc_interface IS
+	PORT 
+		(clock, rst_as: IN STD_LOGIC;
+		input_codifica: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		load_codifica: IN STD_LOGIC;
+		done_tx: BUFFER STD_LOGIC;
+		UART_RXD: IN STD_LOGIC;
+		UART_TXD: OUT STD_LOGIC;
+		start_ack,read_ack: IN STD_LOGIC;
+		F, T, S, R: OUT STD_LOGIC;
+		frequenza: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		pattern: OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+END pc_interface;
+
+ARCHITECTURE behavior OF pc_interface IS
+
+	COMPONENT codifica_ascii 
+		PORT (clk, load_dati, rst_as_n: IN STD_LOGIC;
+				input_blocco: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+				main_sel: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+				en_cnt: IN STD_LOGIC;
+				dati_uart: OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+				TC: BUFFER STD_LOGIC;
+				done_codifica: OUT STD_LOGIC;
+				d_g: OUT STD_LOGIC_VECTOR (1 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT decodifica_ascii
+	PORT (clk, load_uart, rst_as_n: IN STD_LOGIC;
+			input_decodifica: IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+			start_ack,read_ack: IN STD_LOGIC;
+			fail: BUFFER STD_LOGIC;
+			F, T, S, R, done_decodifica: OUT STD_LOGIC;
+			freq: OUT STD_LOGIC_VECTOR (3 DOWNTO 0);
+			pat: OUT STD_LOGIC_VECTOR (7 DOWNTO 0));
+	END COMPONENT;
+	
+	
+	COMPONENT UART_TX
+		PORT (
+						
+			start:IN std_logic;
+			Reset :In std_logic;
+			Data_In: In std_logic_vector(7 downto 0);
+         CLOCK :IN std_logic;
+			Q: OUT std_logic;
+			Done: OUT std_Logic);
+		END COMPONENT;
+		
+	COMPONENT UART_RX 
+		PORT (		
+			Start_RX:OUT std_logic;
+			Reset :In std_logic;
+			Data_In: In std_logic;
+         CLOCK :IN std_logic;
+			Q: OUT std_logic_vector(7 downto 0);
+			Done: OUT std_Logic);
+	END COMPONENT;
+	
+	
+	TYPE state_type IS (S0_IDLE, S1_CODIFICA, S2_DATO0, S3_DATO1, S4_DATOX, 
+	S5_FL, S6_INVIAO, S7_INVIAK, S8_DONE_CODIFICA, S9_ELABORA_UART_RX, S10_START_DECODIFICA, 
+	S11_DECODIFICA, S12_DONE_CODIFICA_COMM, S13_START_UART_TX, S14_ELABORA_UART_TX,
+	S15_START_UART_COMM_FL, S16_ELABORA_COMM_FL, S17_DONE_CODIFICA_FL);
+	SIGNAL stato: state_type;
+	SIGNAL rst: STD_LOGIC;
+	-- segnali codifica
+	SIGNAL sel_codifica: STD_LOGIC_VECTOR(2 DOWNTO 0);
+	SIGNAL out_codifica: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL TC_codifica: STD_LOGIC;
+	SIGNAL dato_glitch: STD_LOGIC_VECTOR (1 DOWNTO 0);
+	SIGNAL done_codifica: STD_LOGIC;
+	SIGNAL en_cnt: STD_LOGIC;
+	-- segnali uart tx
+	SIGNAL start_TX: STD_LOGIC;
+	-- segnali uart rx
+	SIGNAL start_rx: STD_LOGIC;
+	SIGNAL done_rx: STD_LOGIC;
+	SIGNAL out_RX: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	-- segnali decodifica_ascii
+	SIGNAL load_decodifica: STD_LOGIC;
+	SIGNAL done_decodifica: STD_LOGIC;
+	SIGNAL fail: STD_LOGIC;
+
+	
+	BEGIN
+	
+	-- control unit
+	state_update: PROCESS (clock, rst_as)
+	BEGIN
+		IF (rst_as = '0') THEN
+			stato <= S0_IDLE;
+		ELSE
+			IF (clock'EVENT AND clock = '1') THEN
+				CASE stato IS
+					WHEN S0_IDLE =>
+						IF (load_codifica ='1') THEN
+							stato <= S1_CODIFICA;
+						ELSIF (start_RX = '1') THEN	--start rx quando è che viene messo uguale a 1?
+							stato <= S9_ELABORA_UART_RX;
+						END IF;
+					
+					WHEN S1_CODIFICA =>
+						IF (TC_codifica = '1') THEN
+							stato <= S5_FL;
+						ELSIF (TC_codifica = '0' AND dato_glitch = "00") THEN
+							stato <= S2_DATO0;
+						ELSIF (TC_codifica = '0' AND dato_glitch = "10") THEN
+							stato <= S3_DATO1;
+						ELSIF (TC_codifica = '0' AND dato_glitch = "01") THEN
+							stato <= S4_DATOX;
+						ELSIF (TC_codifica = '0' AND dato_glitch = "11") THEN
+							stato <= S4_DATOX;
+						ELSE 
+							stato <= S0_IDLE;
+						END IF;
+						
+					WHEN S2_DATO0 =>
+						stato <= S8_DONE_CODIFICA;
+						
+					WHEN S3_DATO1 =>
+						stato <= S8_DONE_CODIFICA;
+					
+					WHEN S4_DATOX =>
+						stato <= S8_DONE_CODIFICA;
+					
+					WHEN S5_FL =>
+						stato <= S17_DONE_CODIFICA_FL;
+						
+					WHEN S6_INVIAO =>
+						stato <= S12_DONE_CODIFICA_COMM;
+						
+					WHEN S7_INVIAK =>
+						stato <= S12_DONE_CODIFICA_COMM;
+						
+					WHEN S8_DONE_CODIFICA =>
+						stato <= S14_ELABORA_UART_TX;
+						
+					WHEN S9_ELABORA_UART_RX =>
+						IF (done_rx = '1') THEN
+							stato <= S10_START_DECODIFICA;	
+						ELSE
+							stato <= S9_ELABORA_UART_RX;
+						END IF;
+					 
+					WHEN S10_START_DECODIFICA =>
+						stato <= S11_DECODIFICA;
+						
+					WHEN S11_DECODIFICA =>
+						IF (fail = '0' AND done_decodifica = '1') THEN
+							stato <= S6_INVIAO;
+						ELSIF (fail = '1' AND done_decodifica = '1') THEN
+							stato <= S7_INVIAK;
+						ELSIF (done_decodifica = '0') THEN
+							stato <= S11_DECODIFICA;
+						ELSE
+							stato <= S0_IDLE;
+						END IF;
+						
+					WHEN S12_DONE_CODIFICA_COMM =>
+						stato <= S15_START_UART_COMM_FL;
+						
+					WHEN S13_START_UART_TX =>--conTROLLARE
+						stato <= S14_ELABORA_UART_TX;
+						
+					WHEN S14_ELABORA_UART_TX =>
+						IF (done_tx = '1') THEN
+							stato <= S1_CODIFICA;
+						ELSE
+							stato <= S0_IDLE;
+						END IF;
+						
+					WHEN S15_START_UART_COMM_FL =>
+						stato <= S16_ELABORA_COMM_FL;
+					
+					WHEN S16_ELABORA_COMM_FL =>
+						IF (done_tx = '1') THEN
+							stato <= S0_IDLE;
+						ELSE
+							stato <= S16_ELABORA_COMM_FL;
+						END IF;
+					
+					WHEN S17_DONE_CODIFICA_FL =>
+						stato <= S15_START_UART_COMM_FL;
+					
+					WHEN OTHERS =>
+						stato <= S0_IDLE;
+						
+					END CASE;
+				END IF;
+			END IF;
+		END PROCESS;
+	
+	output_process: PROCESS (stato)
+	BEGIN
+	
+		rst <= '0';
+		sel_codifica <= "000";
+		en_cnt <= '0';
+		done_codifica <= '0';
+		start_TX <= '0';
+		load_decodifica <= '0';
+		
+		CASE stato IS
+		
+			WHEN S0_IDLE =>
+				rst <= '1'; 
+			WHEN S1_CODIFICA =>
+				en_cnt <= '1';
+			WHEN S2_DATO0 =>
+				sel_codifica <= "000";
+				-- bisogna capire se il registro è da attivare in questo colpo di clk
+				-- o quello dopo, ma penso quello dopo
+			WHEN S3_DATO1 =>
+				sel_codifica <= "001";
+			WHEN S4_DATOX =>
+				sel_codifica <= "010";
+			WHEN S5_FL =>
+				sel_codifica <= "011";
+			WHEN S6_INVIAO =>
+				sel_codifica <= "100";
+			WHEN S7_INVIAK =>
+				sel_codifica <= "101";
+			WHEN S8_DONE_CODIFICA =>
+				rst <= '0';
+				-- in questo stato dovrebbe attivarsi il done-codifica
+			WHEN S9_ELABORA_UART_RX =>
+				rst <= '0';
+			WHEN S10_START_DECODIFICA =>
+				load_decodifica <= '1';
+			WHEN S11_DECODIFICA =>
+				rst <= '0'; 
+			WHEN S12_DONE_CODIFICA_COMM =>
+				rst <= '0';
+			WHEN S13_START_UART_TX =>	--CONTROLLARE NON è COLLEGATO
+				start_TX <= '1';
+			WHEN S14_ELABORA_UART_TX =>
+				rst <= '0';
+			WHEN S15_START_UART_COMM_FL =>
+				start_TX <= '1';
+			WHEN S16_ELABORA_COMM_FL =>
+				rst <= '0';
+			WHEN S17_DONE_CODIFICA_FL =>
+				rst <= '0';
+			END CASE;
+		END PROCESS;
+		
+	-- datapath
+	
+	ascii_codifica: codifica_ascii 
+		PORT MAP (clock, load_codifica, rst, input_codifica, sel_codifica, en_cnt,
+		out_codifica, TC_codifica, done_codifica, dato_glitch);
+	trasmissione_uart: UART_TX 
+		PORT MAP (start_TX, rst, out_codifica, clock, UART_TXD, done_tx);
+	ricezione_uart: UART_RX
+		PORT MAP (start_RX, rst, UART_RXD, clock, out_RX, done_rx);
+	ascii_decodifica: decodifica_ascii
+		PORT MAP (clock, load_decodifica, rst, out_RX, start_ack, read_ack, fail,
+		F, T, S, R, done_decodifica, frequenza, pattern);
+						
+END behavior;

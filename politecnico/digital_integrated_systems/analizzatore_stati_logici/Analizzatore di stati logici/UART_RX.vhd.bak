@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity UART_RX is 
+   PORT(
+			Start_RX:OUT std_logic;
+			Reset :In std_logic;
+			Data_In: In std_logic;
+         CLOCK :IN std_logic;
+			Q: OUT std_logic_vector(7 downto 0);
+			Done: OUT std_Logic);
+end entity UART_RX;
+
+Architecture link of UART_RX is
+component Uart_datapath is
+Port(
+     
+	  CLOCK :IN std_logic;
+	  D:IN std_logic;
+	  Rst1,Rst2,Rst3,Reset_start,Reset_data:IN std_logic;
+	  Shift_start,Shift_data :IN std_logic;
+	   En_start,En_data: IN std_logic;
+		Inc1,Inc2,Inc3: In std_logic;
+		TC1,TC2,TC3 :OUT std_logic;
+		Start:OUT std_logic;
+		Q: OUT std_logic_vector(7 downto 0)
+		
+		);
+end component;
+component Uart_CU is
+Port( stop_bit : IN std_logic;
+	  Reset_macchina :IN std_logic;
+	  CLOCK :IN std_logic;
+	  Rst1,Rst2,Rst3,Reset_start,Reset_data:OUT std_logic;
+	  Shift_start,Shift_data :OUT std_logic;
+	   En_start,En_data: OUT std_logic;
+		Inc1,Inc2,Inc3,Done: OUT std_logic;
+		TC1,TC2,TC3 :IN std_logic;
+		Start:IN std_logic;
+		Start_RX:OUT std_logic
+		
+		);
+end component;
+signal Rst1s,Rst2s,Rst3s,Reset_starts,Reset_datas,Shift_starts,Shift_datas,En_starts,En_datas: std_logic;
+signal Inc1s,Inc2s,Inc3s,TC1s,TC2s,TC3s,Starts: std_logic;
+signal Qs : std_logic_vector(7 downto 0);
+begin
+datapath : Uart_datapath port map(CLOCK,Data_in,Rst1s,Rst2s,Rst3s,Reset_starts,Reset_datas,Shift_starts,Shift_datas,En_starts,En_datas,
+                                   Inc1s,Inc2s,Inc3s,TC1s,TC2s,TC3s,Starts,Qs);
+Q<=Qs;											  
+CU :Uart_CU port map(Qs(0),Reset,CLOCK,Rst1s,Rst2s,Rst3s,Reset_starts,Reset_datas,Shift_starts,Shift_datas,En_starts,En_datas,
+                                   Inc1s,Inc2s,Inc3s,Done,TC1s,TC2s,TC3s,Starts,Start_RX);
+											  
+end architecture;											  

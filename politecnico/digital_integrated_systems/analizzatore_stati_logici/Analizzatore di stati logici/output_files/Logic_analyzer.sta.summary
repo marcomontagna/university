@@ -1,0 +1,237 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -3.425
+TNS   : -620.045
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'GPIO_1[6]'
+Slack : -1.695
+TNS   : -2.900
+
+Type  : Slow Model Recovery 'GPIO_1[3]'
+Slack : -1.670
+TNS   : -2.845
+
+Type  : Slow Model Recovery 'GPIO_1[4]'
+Slack : -1.637
+TNS   : -2.721
+
+Type  : Slow Model Recovery 'GPIO_1[5]'
+Slack : -1.529
+TNS   : -2.565
+
+Type  : Slow Model Recovery 'GPIO_1[7]'
+Slack : -1.373
+TNS   : -2.255
+
+Type  : Slow Model Recovery 'GPIO_1[2]'
+Slack : -1.164
+TNS   : -2.201
+
+Type  : Slow Model Recovery 'GPIO_1[1]'
+Slack : -1.017
+TNS   : -1.755
+
+Type  : Slow Model Recovery 'GPIO_1[0]'
+Slack : -0.807
+TNS   : -1.320
+
+Type  : Slow Model Recovery 'CLOCK_50'
+Slack : -0.762
+TNS   : -24.446
+
+Type  : Slow Model Removal 'CLOCK_50'
+Slack : 1.031
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[0]'
+Slack : 1.283
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[1]'
+Slack : 1.508
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[7]'
+Slack : 1.652
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[5]'
+Slack : 1.806
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[2]'
+Slack : 1.807
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[4]'
+Slack : 1.854
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[3]'
+Slack : 1.945
+TNS   : 0.000
+
+Type  : Slow Model Removal 'GPIO_1[6]'
+Slack : 1.975
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -348.380
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[0]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[1]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[2]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[3]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[4]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[5]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[6]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_1[7]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.064
+TNS   : -134.513
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -0.289
+TNS   : -2.656
+
+Type  : Fast Model Recovery 'GPIO_1[6]'
+Slack : -0.881
+TNS   : -1.271
+
+Type  : Fast Model Recovery 'GPIO_1[3]'
+Slack : -0.865
+TNS   : -1.235
+
+Type  : Fast Model Recovery 'GPIO_1[4]'
+Slack : -0.835
+TNS   : -1.144
+
+Type  : Fast Model Recovery 'GPIO_1[5]'
+Slack : -0.764
+TNS   : -1.038
+
+Type  : Fast Model Recovery 'GPIO_1[7]'
+Slack : -0.726
+TNS   : -0.957
+
+Type  : Fast Model Recovery 'GPIO_1[2]'
+Slack : -0.559
+TNS   : -0.918
+
+Type  : Fast Model Recovery 'GPIO_1[1]'
+Slack : -0.534
+TNS   : -0.669
+
+Type  : Fast Model Recovery 'GPIO_1[0]'
+Slack : -0.439
+TNS   : -0.474
+
+Type  : Fast Model Recovery 'CLOCK_50'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Fast Model Removal 'CLOCK_50'
+Slack : 0.581
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[0]'
+Slack : 0.915
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[1]'
+Slack : 1.015
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[7]'
+Slack : 1.111
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[5]'
+Slack : 1.154
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[4]'
+Slack : 1.189
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[2]'
+Slack : 1.239
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[3]'
+Slack : 1.250
+TNS   : 0.000
+
+Type  : Fast Model Removal 'GPIO_1[6]'
+Slack : 1.270
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -348.380
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[0]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[1]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[2]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[3]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[4]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[5]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[6]'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'GPIO_1[7]'
+Slack : -1.222
+TNS   : -3.222
+
+------------------------------------------------------------

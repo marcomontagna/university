@@ -1,0 +1,21 @@
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\bin\Debug\SerialLineUseManual.exe
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\bin\Debug\SerialLineUseManual.pdb
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.Properties.Resources.resources
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.SerialLineUseManual.resources
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.csproj.GenerateResource.Cache
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.exe
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.pdb
+C:\Users\Giuseppe\Documents\Personale\POLITO\Magistrale\SISTEMI DI MISURA E SENSORI\PROGRAMMAZIONE\c#\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.csprojResolveAssemblyReference.cache
+C:\Users\Giuseppe\Documents\Visual Studio 2012\Projects\Connessione Arduino\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.exe
+C:\Users\Giuseppe\Documents\Visual Studio 2012\Projects\Connessione Arduino\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.pdb
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\bin\Debug\SerialLineUseManual.exe
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\bin\Debug\SerialLineUseManual.pdb
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.csprojResolveAssemblyReference.cache
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.Properties.Resources.resources
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.SerialLineUseManual.resources
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.csproj.GenerateResource.Cache
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.csproj.CoreCompileInputs.cache
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.exe
+C:\Users\emanu\Downloads\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.pdb
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_ConnessionePc\Connessione Arduino\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.exe
+C:\Users\Giuseppe\Dropbox\Sistemi di misura e sensori\Arduino_ConnessionePc\Connessione Arduino\SerialLineUseManual\SerialLineUseManual\SerialLineUseManual\obj\Debug\SerialLineUseManual.pdb

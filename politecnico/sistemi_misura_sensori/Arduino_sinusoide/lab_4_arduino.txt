@@ -1,0 +1,129 @@
+//MACRO
+#ifndef sbi //marco usato per settare singoli bit a 1 set bit
+#define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit)) 
+#endif 
+
+//parametri
+int scaler=2;
+float wait = 0; //tempo da aspettare prima che ADC sia pronto
+int lettura;
+int N=30; //numero campioni
+
+//parametri linea seriale
+const int BUFFER_SIZE = 10; //ampiezza buffer
+char commandBuffer[BUFFER_SIZE + 1];//spazio da allocare per i caratteri
+int bufferPos = 0; //flag posizione puntatore buffer
+
+//routine usata per pulire il buffer di ricezione
+void clearBuffer() {
+  for (int i = 0; i<BUFFER_SIZE + 1; i++)
+    commandBuffer[i] = (char)0;//scrive dei caratterri nulli nel buffer di ingresso 
+  bufferPos = 0;
+}
+
+//routine usata per salvare i dati in ingresso dalla linea seriale, mi basta definire questa funzione e arduino la lancia in automatico ogni volta che c'e' roba sulla linea seriale
+void serialEvent() {
+  char inChar = Serial.read(); //legge i dati disponibili nel registro di ingresso della linea seriale
+  if (inChar == '\n') {
+    Serial.print("dato ricevuto: ");
+    scaler = atof(commandBuffer); //converte la stringa ricevuta in float
+    Serial.println(scaler,2);//due cifre decimali significative
+    wait = setADCScaler(scaler); // faccio partire la funzione che gestisce il cambio di prescaler
+    delay(wait); //aspetto che l'ADC sia pronto
+    clearBuffer();  //pulisce buffer
+  }
+  else {
+    if (bufferPos<BUFFER_SIZE - 1) {
+      commandBuffer[bufferPos++] = inChar;
+    }
+    else {
+      Serial.print("errore ricezione\n");
+      clearBuffer();
+    }
+  }
+}
+
+void setup() {
+  // put your setup code here, to run once:
+  ADMUX = 0xC5;//abilito riferimento tensione interno, imposto left adjust e seleziono canale A5
+  ADCSRA = 0x87;//abilito ADC, imposto prescaler a 128, freq ad=125kHz, 104us per misura
+  //ADCSRB = 0x06;//imposta come source di trigger l'interrupt generato dall'output compare del contatore a 16bit timer/counter1
+  //TCCR1A = 0x00; //valore di default, no pwm, no input capture, no bullshit
+  //TCCR1C = 0x00; //dovrebbe essere già a 0 ma lo inizializzo comunque
+  //TCCR1B = 0x00;  //spengo timer
+  sbi(ADCSRA, ADSC);  //eseguo prima lettura per inizializzare l'adc
+  Serial.begin(115200);//apro linea seriale con 115200bps
+  sbi(ADCSRA, ADIF); //pulisco flag interrupt adc, in verita' non lo pulisco ma funziona tutto uguale, perche'?
+  clearBuffer();  //clean the input buffer
+   analogReference(INTERNAL);
+  //Serial.println(ADCSRA);//dovrebbe essere 87 cioe' 135, in verita' e' sempre 151 ma funziona tutto bene anche se non dovrebbe, perche'?
+}
+
+  
+
+
+void loop() {
+  if(tot_campioni<N)
+  {
+    lettura= analogRead(A5);
+    Serial.print("Measured value is: ");
+    Serial.print(lettura);
+    tot_campioni++;
+  }
+}
+
+
+
+float setADCScaler(int scaler){ // la funziona ritorna il tempo di conversione in us
+ float clock=16; //MHz
+ ADCSRA &=0xF8; //clear lower 3 bits
+//ADC conversion requires 13 clocks cycles 
+  switch(scaler){
+ case 2:
+ ADCSRA |=1;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0; //resetto il numero di campioni
+ return 13*2/clock;
+ break;
+ case 4:
+ ADCSRA |=2;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*4/clock;
+ break;
+ case 8:
+ ADCSRA |=3;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*8/clock;
+ break;
+ case 16:
+ ADCSRA |=4;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*16/clock;
+ break;
+ case 32:
+ ADCSRA |=5;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*32/clock;
+ break;
+ case 64:
+ ADCSRA |=6;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*64/clock;
+ break;
+ case 128:
+ ADCSRA |=7;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*128/clock;
+ break;
+ default:
+ ADCSRA |=7;
+ sbi(ADCSRA, ADSC); //eseguo prima lettura per inizializzare l'adc
+ tot_campioni=0;
+ return 13*128/clock; }
+}

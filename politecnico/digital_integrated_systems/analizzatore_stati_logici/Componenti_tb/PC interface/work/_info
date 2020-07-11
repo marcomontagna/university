@@ -1,0 +1,805 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Emanuele Valpreda\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Sampler
+Eadder_4bit
+Z0 w1515678523
+Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\PC interface
+Z6 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/adder_4bit.vhd
+Z7 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/adder_4bit.vhd
+l0
+L7
+VXbRcRAAY9P]4N?5]3a;j<0
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1516529825.452000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/adder_4bit.vhd|
+Z11 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/adder_4bit.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 OzZ9Yg2R;>eT8:Mc`cVLQ2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 10 adder_4bit 0 22 XbRcRAAY9P]4N?5]3a;j<0
+l16
+L15
+VZM00h1TG<=MAZQj>DSDd^1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 jJiac:jc^@15PGmXzZgn`1
+!i10b 1
+Ecodifica_ascii
+Z14 w1516457670
+R3
+R4
+R5
+Z15 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/codifica_ascii.vhd
+Z16 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/codifica_ascii.vhd
+l0
+L6
+VM;0NEgUk_W1m@igoiaCg22
+R8
+32
+Z17 !s108 1516529825.543000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/codifica_ascii.vhd|
+Z19 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/codifica_ascii.vhd|
+R12
+R13
+!s100 Ik16W5M:kS?oN7<YL?be>0
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 14 codifica_ascii 0 22 M;0NEgUk_W1m@igoiaCg22
+l53
+L16
+VIT0dkmD0DI9nI64W[ECkI3
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 ;[KHM]aeH5V@f=FDLQQKR1
+!i10b 1
+Ecomparatore
+Z20 w1516529820
+R3
+R4
+R5
+Z21 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/comparatore.vhd
+Z22 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/comparatore.vhd
+l0
+L6
+VHJ4d8EkP7z>0HHddb=E9=1
+R8
+32
+Z23 !s108 1516529825.634000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/comparatore.vhd|
+Z25 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/comparatore.vhd|
+R12
+R13
+!s100 :L0N_4fZczkCSR[;H?Gm[0
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 11 comparatore 0 22 HJ4d8EkP7z>0HHddb=E9=1
+l14
+L13
+VkmnZ0U@0>ZH2iHMnVbgYo3
+R8
+32
+R23
+R24
+R25
+R12
+R13
+!s100 `EV`c3RT3FWB;bX8b82=M2
+!i10b 1
+Ecounter
+Z26 w1513856534
+Z27 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R3
+R4
+R5
+Z28 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd
+Z29 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd
+l0
+L5
+VIT1;zLH0BWdk=gAJ5@2e:0
+R8
+32
+Z30 !s108 1516529825.727000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd|
+Z32 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/counter.vhd|
+R12
+R13
+!s100 _SJ[B1D1E=E[ELoVNRb440
+!i10b 1
+Abehaviour
+R27
+R3
+R4
+DEx4 work 7 counter 0 22 IT1;zLH0BWdk=gAJ5@2e:0
+l16
+L15
+VHEXWi<K[0mFeRk=Rbj4k:1
+R8
+32
+R30
+R31
+R32
+R12
+R13
+!s100 LiBGLMfIBCoYoBk>>GDXa1
+!i10b 1
+Ecounter_nbit
+Z33 w1516294079
+R1
+R2
+R27
+R3
+R4
+R5
+Z34 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/COUNTER_NBIT.vhd
+Z35 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/COUNTER_NBIT.vhd
+l0
+L5
+VQEH?Pf==nS:Z<nI0nP;Kd2
+R8
+32
+Z36 !s108 1516529825.816000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/COUNTER_NBIT.vhd|
+Z38 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/COUNTER_NBIT.vhd|
+R12
+R13
+!s100 MK9VBhh3h<lM;`hUaGQm52
+!i10b 1
+Abehavior
+R1
+R2
+R27
+R3
+R4
+DEx4 work 12 counter_nbit 0 22 QEH?Pf==nS:Z<nI0nP;Kd2
+l19
+L15
+VYb;[cWeI_RV4U[>6fa2Y33
+R8
+32
+R36
+R37
+R38
+R12
+R13
+!s100 QA[5G2HgT>FOEH3YJEmBD3
+!i10b 1
+Ed_ff_uart
+Z39 w1516270182
+R3
+R4
+R5
+Z40 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd
+Z41 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd
+l0
+L6
+V^9n5hd@FYCje@8SO5z`DQ2
+R8
+32
+Z42 !s108 1516529825.910000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd|
+Z44 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/D_FF_UART.vhd|
+R12
+R13
+!s100 7bm`lHH7C4Ja?^B_KDXJV1
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 9 d_ff_uart 0 22 ^9n5hd@FYCje@8SO5z`DQ2
+l13
+L11
+VVVkUaMjbz]DOHcXY_=cB53
+R8
+32
+R42
+R43
+R44
+R12
+R13
+!s100 FCn2S>h?a:gAN_[S5LOYU1
+!i10b 1
+Edata_register
+Z45 w1515677894
+R3
+R4
+R5
+Z46 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd
+Z47 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd
+l0
+L3
+V9OgjD>M=kH9P>mKJ6aT5U1
+R8
+32
+Z48 !s108 1516529826.000000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd|
+Z50 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/DATA_REGISTER.vhd|
+R12
+R13
+!s100 CnJfgB7Ha@LljajE1?0oI2
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 13 data_register 0 22 9OgjD>M=kH9P>mKJ6aT5U1
+l12
+L11
+V=:n_Mhe:lYK8D5z7<dcH^3
+R8
+32
+R48
+R49
+R50
+R12
+R13
+!s100 EcP6el_8:9h4dz:`NaHdl2
+!i10b 1
+Edecodifica_ascii
+Z51 w1516463786
+R3
+R4
+R5
+Z52 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/decodifica_ascii.vhd
+Z53 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/decodifica_ascii.vhd
+l0
+L5
+VTNI@8LziJZ6JDP9`KaJ4<1
+R8
+32
+Z54 !s108 1516529826.090000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/decodifica_ascii.vhd|
+Z56 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/decodifica_ascii.vhd|
+R12
+R13
+!s100 X_klDQVhjggKB8EQaM@oc2
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 16 decodifica_ascii 0 22 TNI@8LziJZ6JDP9`KaJ4<1
+l68
+L15
+VzlEgjSY]bPcUEk;]R[=zk0
+R8
+32
+R54
+R55
+R56
+R12
+R13
+!s100 VfFhU=>ScBD5iEn]o_<813
+!i10b 1
+Edut_handler
+Z57 w1516529250
+R1
+R2
+R27
+R3
+R4
+R5
+Z58 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/DUT_handler.vhd
+Z59 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/DUT_handler.vhd
+l0
+L6
+VF;LH0Ta^i5AjAD>ezbdFZ3
+R8
+32
+Z60 !s108 1516529825.266000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/DUT_handler.vhd|
+Z62 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/DUT_handler.vhd|
+R12
+R13
+!s100 A^2:c`I88PG2AOi1;HXic2
+!i10b 1
+Abeh
+R1
+R2
+R27
+R3
+R4
+DEx4 work 11 dut_handler 0 22 F;LH0Ta^i5AjAD>ezbdFZ3
+l60
+L16
+V3dBEQ=MUCJKn8SN=aIdPC3
+R8
+32
+R60
+R61
+R62
+R12
+R13
+!s100 E7mK<VbJ8?:EaK5>RQ>jD0
+!i10b 1
+Eflip_flop_d
+Z63 w1515677938
+R3
+R4
+R5
+Z64 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/FLIP_FLOP_D.vhd
+Z65 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/FLIP_FLOP_D.vhd
+l0
+L3
+V0W2UAQkPYbZDRkM60?3?h0
+R8
+32
+Z66 !s108 1516529826.184000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/FLIP_FLOP_D.vhd|
+Z68 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/FLIP_FLOP_D.vhd|
+R12
+R13
+!s100 H^XDzoYg9l:TH3HnG<23g0
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 11 flip_flop_d 0 22 0W2UAQkPYbZDRkM60?3?h0
+l11
+L10
+Vi`cflDjOXWG4;[[Go3nj23
+R8
+32
+R66
+R67
+R68
+R12
+R13
+!s100 o7CEmEG4A;[><=lNNVe<c3
+!i10b 1
+Emux_2to1
+Z69 w1515678549
+R3
+R4
+R5
+Z70 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/mux_2to1.vhd
+Z71 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/mux_2to1.vhd
+l0
+L5
+VdZTXAU_aGB?>LZKaWJP551
+R8
+32
+Z72 !s108 1516529826.272000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/mux_2to1.vhd|
+Z74 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/mux_2to1.vhd|
+R12
+R13
+!s100 NCk]Rzj3BHc@:gfbo65m:0
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 8 mux_2to1 0 22 dZTXAU_aGB?>LZKaWJP551
+l15
+L14
+Vi@MTOG8AV:6U<dk_9KZ5<1
+R8
+32
+R72
+R73
+R74
+R12
+R13
+!s100 ci_eEPNGY_UI>N:=lc3O:0
+!i10b 1
+Emux_nbit
+Z75 w1515678685
+R3
+R4
+R5
+Z76 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/MUX_NBIT.vhd
+Z77 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/MUX_NBIT.vhd
+l0
+L4
+VXRhN7]ehnC8DbIMDm0XLQ3
+R8
+32
+Z78 !s108 1516529826.359000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/MUX_NBIT.vhd|
+Z80 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/MUX_NBIT.vhd|
+R12
+R13
+!s100 lF@FzEX2RnI;7N_iTBnb;2
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 8 mux_nbit 0 22 XRhN7]ehnC8DbIMDm0XLQ3
+l15
+L13
+V;2KdQNb]:6VbdoNUKCm8o2
+R8
+32
+R78
+R79
+R80
+R12
+R13
+!s100 f2@>`oIbfKd3]o<8Nl3]X1
+!i10b 1
+Epc_interface
+Z81 w1516464674
+R3
+R4
+R5
+Z82 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/pc_interface.vhd
+Z83 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/pc_interface.vhd
+l0
+L5
+VWKcC0nBhf5]3Q_OUVHB481
+R8
+32
+Z84 !s108 1516529826.446000
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/pc_interface.vhd|
+Z86 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/pc_interface.vhd|
+R12
+R13
+!s100 _14=RE5@O2=AU2J0IHLAb3
+!i10b 1
+Abehavior
+R3
+R4
+DEx4 work 12 pc_interface 0 22 WKcC0nBhf5]3Q_OUVHB481
+l108
+L19
+VoC3CW_;gc<g@5>nkKFU]51
+R8
+32
+R84
+R85
+R86
+R12
+R13
+!s100 d0M<1Vm>QFJoUDUWZgWSH1
+!i10b 1
+Eshift_reg
+Z87 w1516269953
+R27
+R3
+R4
+R5
+Z88 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd
+Z89 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd
+l0
+L5
+V?3GFKYmXLIICSfe^6j@[^3
+R8
+32
+Z90 !s108 1516529826.532000
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd|
+Z92 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg.vhd|
+R12
+R13
+!s100 Hh5E@1kQmQWlXA]@;8JE53
+!i10b 1
+Abehavior
+R27
+R3
+R4
+DEx4 work 9 shift_reg 0 22 ?3GFKYmXLIICSfe^6j@[^3
+l14
+L12
+Vc@<6UYOR0NK7WicglBg?c3
+R8
+32
+R90
+R91
+R92
+R12
+R13
+!s100 >8zRCOje7KmEZ1XUH]>[10
+!i10b 1
+Eshift_reg_piso
+R33
+R27
+R3
+R4
+R5
+Z93 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg_PISO.vhd
+Z94 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg_PISO.vhd
+l0
+L5
+VF@0]z2QzcYe]2Ji2]Q=[G3
+R8
+32
+Z95 !s108 1516529826.623000
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg_PISO.vhd|
+Z97 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Shift_reg_PISO.vhd|
+R12
+R13
+!s100 @G631kdPX0GHzeD9h:ZLJ0
+!i10b 1
+Abehavior
+R27
+R3
+R4
+DEx4 work 14 shift_reg_piso 0 22 F@0]z2QzcYe]2Ji2]Q=[G3
+l15
+L13
+VloP`WnZ6K29I]S7beCjYF3
+R8
+32
+R95
+R96
+R97
+R12
+R13
+!s100 ef>8b3z[E_m2lP;B<_@Nm3
+!i10b 1
+Etestbench
+Z98 w1516524272
+R3
+R4
+R5
+Z99 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/testbench.vhd
+Z100 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/testbench.vhd
+l0
+L3
+V96F_DljfQCB9AQ^><k1HO3
+R8
+32
+Z101 !s108 1516529825.362000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/testbench.vhd|
+Z103 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/PC interface/testbench.vhd|
+R12
+R13
+!s100 Dg`@FnD^81Y?=GhWC>>SQ2
+!i10b 1
+Atest
+R3
+R4
+DEx4 work 9 testbench 0 22 96F_DljfQCB9AQ^><k1HO3
+l36
+L5
+ViI@]P6nGn5mR6z8e5nE7m2
+R8
+32
+R101
+R102
+R103
+R12
+R13
+!s100 i82HQl6Z=_nbNU^RTh_BB1
+!i10b 1
+Euart_cu_tx
+Z104 w1516294334
+R27
+R3
+R4
+R5
+Z105 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_CU_TX.vhd
+Z106 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_CU_TX.vhd
+l0
+L5
+VJVIm=JzJMUUGaFAQ<dlK@1
+R8
+32
+Z107 !s108 1516529826.722000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_CU_TX.vhd|
+Z109 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_CU_TX.vhd|
+R12
+R13
+!s100 Fg??00MiDiJR9RJa7?k:A1
+!i10b 1
+Amaster_behave
+R27
+R3
+R4
+DEx4 work 10 uart_cu_tx 0 22 JVIm=JzJMUUGaFAQ<dlK@1
+l20
+L17
+ViOhPNoGa^WEeRccliPb0m3
+R8
+32
+R107
+R108
+R109
+R12
+R13
+!s100 Y]ZU9z4^P?21D;S4A>f840
+!i10b 1
+Euart_datapath_piso
+Z110 w1516294280
+R27
+R3
+R4
+R5
+Z111 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_datapath_PISO.vhd
+Z112 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_datapath_PISO.vhd
+l0
+L5
+VVNA10K>Shz9R[U6?MF10b0
+R8
+32
+Z113 !s108 1516529826.814000
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_datapath_PISO.vhd|
+Z115 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_datapath_PISO.vhd|
+R12
+R13
+!s100 8CzkK]l1HMf]1e32?NaMV3
+!i10b 1
+Apath
+R27
+R3
+R4
+DEx4 work 18 uart_datapath_piso 0 22 VNA10K>Shz9R[U6?MF10b0
+l44
+L20
+Vcl_C:jAY5B`e49mJ4OL=T2
+R8
+32
+R113
+R114
+R115
+R12
+R13
+!s100 d6LbVCm6[TbLPALMan[QP2
+!i10b 1
+Euart_rx
+Z116 w1516283894
+R3
+R4
+R5
+Z117 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd
+Z118 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd
+l0
+L4
+VP?5g@LJc@6EzCPoWLo?<a2
+R8
+32
+Z119 !s108 1516529826.907000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd|
+Z121 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_RX.vhd|
+R12
+R13
+!s100 `8gm5697L32`TL^m9RO3A2
+!i10b 1
+Alink
+R3
+R4
+DEx4 work 7 uart_rx 0 22 P?5g@LJc@6EzCPoWLo?<a2
+l48
+L14
+V0jD1:hSb[k7k^Z;8kzGhJ2
+R8
+32
+R119
+R120
+R121
+R12
+R13
+!s100 Da``eH2@ZcfkjcLnGKQmV2
+!i10b 1
+Euart_rx_cu
+Z122 w1516283834
+R27
+R3
+R4
+R5
+Z123 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd
+Z124 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd
+l0
+L5
+VA`BT7bJOWDSZ3bP=aC26b1
+R8
+32
+Z125 !s108 1516529827.002000
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd|
+Z127 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_CU.vhd|
+R12
+R13
+!s100 >FPW1BW=9N<BJ_Fhm47M`0
+!i10b 1
+Amaster_behave
+R27
+R3
+R4
+DEx4 work 10 uart_rx_cu 0 22 A`BT7bJOWDSZ3bP=aC26b1
+l24
+L21
+VZmYh>;jCE<U3k=WOa]8il0
+R8
+32
+R125
+R126
+R127
+R12
+R13
+!s100 mWk=`MUTbh`_k?Jb?MSa?1
+!i10b 1
+Euart_rx_datapath
+R122
+R27
+R3
+R4
+R5
+Z128 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd
+Z129 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd
+l0
+L5
+VLT9kH=hboAln6JRW`KbGT1
+R8
+32
+Z130 !s108 1516529827.109000
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd|
+Z132 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/Uart_rx_datapath.vhd|
+R12
+R13
+!s100 :O[=4je<aGfmQZGODgmnH2
+!i10b 1
+Apath
+R27
+R3
+R4
+DEx4 work 16 uart_rx_datapath 0 22 LT9kH=hboAln6JRW`KbGT1
+l59
+L21
+V=QMc[N:^lJ8;VA^C6l>aM1
+!s100 _HQAWK9GTO?GH[SaO2<EY2
+R8
+32
+R130
+R131
+R132
+R12
+R13
+!i10b 1
+Euart_tx
+Z133 w1516292084
+R3
+R4
+R5
+Z134 8C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_TX.vhd
+Z135 FC:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_TX.vhd
+l0
+L4
+V`ol9D^LCE^g:n3oCL`5LX3
+!s100 <62QlG;=W8]3jF3UX<6450
+R8
+32
+!i10b 1
+Z136 !s108 1516529827.237000
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_TX.vhd|
+Z138 !s107 C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Analizzatore di stati logici/UART_TX.vhd|
+R12
+R13
+Alink
+R3
+R4
+Z139 DEx4 work 7 uart_tx 0 22 `ol9D^LCE^g:n3oCL`5LX3
+l42
+L14
+Z140 V?1BAJ`TUDU^jOe95Ok65l1
+Z141 !s100 K>2;?cJh^DFEG@TWfU15X1
+R8
+32
+!i10b 1
+R136
+R137
+R138
+R12
+R13

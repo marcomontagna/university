@@ -1,0 +1,40 @@
+//qua potrei leggere il multimetro
+                try
+                {
+                    gpibDmm = new NationalInstruments.NI4882.Device(BOARD, ADDRESS, SEC_ADDRESS);  //OGGETTO ATTRAVERSO IL QUALE SCRIVERE IL COMANDO AD ARDUINO
+                    gpibDmm.DefaultBufferSize = 32000;                                              //SIZE OF THE INTERNAL BUFFER FOR READING THE DATA
+                    gpibDmm.IOTimeout = TimeoutValue.T10s;                                          //FEED THE DOG
+
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //return;
+                }
+                //'write the request
+                try
+                {
+                    gpibDmm.Write("MEAS:VOLT:DC? 10,0.00001\n");                                    //IO METTEREI UNA PRECISIONE DI 6 E MEZZO // COMANDO COPIATO DALLE SLIDE
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //return;
+                }
+                //'get the answer
+                try
+                {
+                    response = gpibDmm.ReadString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //return;
+                }
+
+private void FormIee488_Load(object sender, EventArgs e)                        //MULTIMETRO - PRESENTE NELL'ESEMPIO - NON SO A COSA SERVA
+        {
+
+        }

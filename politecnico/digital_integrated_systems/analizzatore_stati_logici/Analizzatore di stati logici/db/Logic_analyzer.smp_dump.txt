@@ -1,0 +1,165 @@
+
+State Machine - |Logic_analyzer|stato
+Name stato.S13_READ_READY stato.S12_ELABORA_PC_IN stato.S11_LOAD_CODIFICA stato.S10_WAIT_OUT_VALID stato.S9bis_WAIT_READ_CONFIRM stato.S9bis_READ_REQ stato.S9_WAIT_R stato.S8_IDLE_128K stato.S6_WAIT_MATCH_P stato.S5_IDLE_T stato.S5bis_PATTERN stato.S4_IDLE_F stato.S4bis_SET_FREQ stato.S3_WR_REQ stato.S2_SAMPLE stato.S1_IDLE_DEF stato.S0_RESET 
+stato.S0_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+stato.S1_IDLE_DEF 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+stato.S2_SAMPLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+stato.S3_WR_REQ 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+stato.S4bis_SET_FREQ 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+stato.S4_IDLE_F 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+stato.S5bis_PATTERN 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+stato.S5_IDLE_T 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+stato.S6_WAIT_MATCH_P 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+stato.S8_IDLE_128K 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+stato.S9_WAIT_R 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+stato.S9bis_READ_REQ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+stato.S9bis_WAIT_READ_CONFIRM 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S10_WAIT_OUT_VALID 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S11_LOAD_CODIFICA 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S12_ELABORA_PC_IN 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S13_READ_READY 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Logic_analyzer|trigger_generator:generatore_trigger|stato
+Name stato.S4_RESET_MATCH stato.S3_MATCH stato.S2_WAIT stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 0 0 
+stato.S1_IDLE 0 0 0 1 1 
+stato.S2_WAIT 0 0 1 0 1 
+stato.S3_MATCH 0 1 0 0 1 
+stato.S4_RESET_MATCH 1 0 0 0 1 
+
+State Machine - |Logic_analyzer|pc_interface:interfaccia_pc|stato
+Name stato.S16_UART_TX_O_K stato.S16_DONE_CODIFICA_O_K stato.S15_DECODIFICA stato.S14_START_DECODIFICA stato.S13_ELABORA_UART_RX stato.S12bis_DATA_SENT stato.S12_UART_TX_CR stato.S12_UART_TX_FL stato.S11_DONE_CODIFICA_CR stato.S11_DONE_CODIFICA_FL stato.S10_UART_TX_DATO stato.S9_DONE_CODIFICA stato.S8_INVIAK_BIS stato.S7_INVIAO_BIS stato.S8_INVIAK stato.S7_INVIAO stato.S6bis_CR_BIS stato.S6_FL_BIS stato.S6bis_CR stato.S6_FL stato.S5_DATOX stato.S4_DATO1 stato.S3_DATO0 stato.S2_CODIFICA stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+stato.S1_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+stato.S2_CODIFICA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+stato.S3_DATO0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+stato.S4_DATO1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+stato.S5_DATOX 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+stato.S6_FL 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+stato.S6bis_CR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+stato.S6_FL_BIS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+stato.S6bis_CR_BIS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+stato.S7_INVIAO 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+stato.S8_INVIAK 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+stato.S7_INVIAO_BIS 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S8_INVIAK_BIS 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S9_DONE_CODIFICA 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S10_UART_TX_DATO 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S11_DONE_CODIFICA_FL 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S11_DONE_CODIFICA_CR 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S12_UART_TX_FL 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S12_UART_TX_CR 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S12bis_DATA_SENT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S13_ELABORA_UART_RX 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S14_START_DECODIFICA 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S15_DECODIFICA 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S16_DONE_CODIFICA_O_K 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S16_UART_TX_O_K 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Logic_analyzer|pc_interface:interfaccia_pc|decodifica_ascii:ascii_decodifica|stato
+Name stato.S11_SAVE_PATTERN stato.S9_T_LOWER stato.S9_T_WAIT2 stato.S9_Th2_AF stato.S9_Th2_09 stato.S8_Th1_AF stato.S8_Th1_09 stato.S7_ESEGUI_F stato.S6_Fn09 stato.S5_R stato.S4_S stato.S3_T_UPPER stato.S3_T_WAIT1 stato.S2_F_WAIT_PR stato.S2_F stato.S1_FAIL stato.S0_IDLE stato.S_RESET 
+stato.S_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+stato.S0_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+stato.S1_FAIL 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+stato.S2_F 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+stato.S2_F_WAIT_PR 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+stato.S3_T_WAIT1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+stato.S3_T_UPPER 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+stato.S4_S 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+stato.S5_R 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+stato.S6_Fn09 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+stato.S7_ESEGUI_F 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+stato.S8_Th1_09 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+stato.S8_Th1_AF 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S9_Th2_09 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S9_Th2_AF 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S9_T_WAIT2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S9_T_LOWER 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stato.S11_SAVE_PATTERN 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Logic_analyzer|pc_interface:interfaccia_pc|UART_RX:ricezione_uart|Uart_rx_CU:CU|Present_state
+Name Present_state.Stop_bit_state Present_state.INC3_state Present_state.Enable_Start_state Present_state.End_state Present_state.Shift_Data_state Present_state.Data_state Present_state.Shift_Start_state Present_state.Start_state Present_state.Reset_state 
+Present_state.Reset_state 0 0 0 0 0 0 0 0 0 
+Present_state.Start_state 0 0 0 0 0 0 0 1 1 
+Present_state.Shift_Start_state 0 0 0 0 0 0 1 0 1 
+Present_state.Data_state 0 0 0 0 0 1 0 0 1 
+Present_state.Shift_Data_state 0 0 0 0 1 0 0 0 1 
+Present_state.End_state 0 0 0 1 0 0 0 0 1 
+Present_state.Enable_Start_state 0 0 1 0 0 0 0 0 1 
+Present_state.INC3_state 0 1 0 0 0 0 0 0 1 
+Present_state.Stop_bit_state 1 0 0 0 0 0 0 0 1 
+
+State Machine - |Logic_analyzer|pc_interface:interfaccia_pc|UART_TX:trasmissione_uart|Uart_CU_TX:CU|Present_state
+Name Present_state.After_shift_state Present_state.End_state Present_state.Shift_Data_state Present_state.Data_state Present_state.Before_Data_state Present_state.Reset_state 
+Present_state.Reset_state 0 0 0 0 0 0 
+Present_state.Before_Data_state 0 0 0 0 1 1 
+Present_state.Data_state 0 0 0 1 0 1 
+Present_state.Shift_Data_state 0 0 1 0 0 1 
+Present_state.End_state 0 1 0 0 0 1 
+Present_state.After_shift_state 1 0 0 0 0 1 
+
+State Machine - |Logic_analyzer|Memory_Interface:interfaccia_memoria|PRESENT_STATE
+Name PRESENT_STATE.WRITE_COMPLETE PRESENT_STATE.CHECK_WRITE_STATUS PRESENT_STATE.READ_COMPLETE PRESENT_STATE.INIZIALIZE_READ PRESENT_STATE.END_READ PRESENT_STATE.POST_READ PRESENT_STATE.READ_MEM PRESENT_STATE.PRE_READ_OE PRESENT_STATE.PRE_READ_CE PRESENT_STATE.POST_WRITE_LATCH_ADD PRESENT_STATE.POST_WRITE PRESENT_STATE.PRE_WRITE PRESENT_STATE.WRITE_MEM PRESENT_STATE.IDLE PRESENT_STATE.RESET_STATE 
+PRESENT_STATE.RESET_STATE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+PRESENT_STATE.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+PRESENT_STATE.WRITE_MEM 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+PRESENT_STATE.PRE_WRITE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+PRESENT_STATE.POST_WRITE 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+PRESENT_STATE.POST_WRITE_LATCH_ADD 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+PRESENT_STATE.PRE_READ_CE 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+PRESENT_STATE.PRE_READ_OE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+PRESENT_STATE.READ_MEM 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+PRESENT_STATE.POST_READ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+PRESENT_STATE.END_READ 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+PRESENT_STATE.INIZIALIZE_READ 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+PRESENT_STATE.READ_COMPLETE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+PRESENT_STATE.CHECK_WRITE_STATUS 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+PRESENT_STATE.WRITE_COMPLETE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler8|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler7|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler6|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler5|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler4|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler3|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler2|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 
+
+State Machine - |Logic_analyzer|sampler:sampler1|stato
+Name stato.S2_SAMPLE stato.S1_IDLE stato.S0_RESET 
+stato.S0_RESET 0 0 0 
+stato.S1_IDLE 0 1 1 
+stato.S2_SAMPLE 1 0 1 

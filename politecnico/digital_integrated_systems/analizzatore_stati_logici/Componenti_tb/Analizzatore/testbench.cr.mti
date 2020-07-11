@@ -1,0 +1,265 @@
+{C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/FLIP_FLOP_D.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/FLIP_FLOP_D.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FLIP_FLOP_D
+-- Compiling architecture BEHAVIOR of FLIP_FLOP_D
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/UART_TX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/UART_TX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity UART_TX
+-- Compiling architecture link of UART_TX
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/mux_2to1.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/mux_2to1.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2to1
+-- Compiling architecture behavior of mux_2to1
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/counter.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/counter.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture behaviour of counter
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Memory_Interface.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Analizzatore\Memory_Interface.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Memory_Interface
+-- Compiling architecture structural of Memory_Interface
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/trigger_generator.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/trigger_generator.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity trigger_generator
+-- Compiling architecture behavior of trigger_generator
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/codifica_ascii.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Analizzatore\codifica_ascii.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity codifica_ascii
+-- Compiling architecture behavior of codifica_ascii
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/adder_4bit.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/adder_4bit.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity adder_4bit
+-- Compiling architecture behavior of adder_4bit
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Logic_analyzer.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Analizzatore\Logic_analyzer.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Logic_analyzer
+-- Compiling architecture behavior of Logic_analyzer
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/COUNTER_NBIT.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Analizzatore\COUNTER_NBIT.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity COUNTER_NBIT
+-- Compiling architecture BEHAVIOR of COUNTER_NBIT
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_rx_CU.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_rx_CU.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_rx_CU
+-- Compiling architecture Master_Behave of Uart_rx_CU
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/sampler.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/sampler.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sampler
+-- Compiling architecture behavior of sampler
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/MUX_10_to_1.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/MUX_10_to_1.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_10_to_1
+-- Compiling architecture BEHAVIOR of MUX_10_to_1
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Shift_reg_PISO.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Shift_reg_PISO.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Shift_reg_PISO
+-- Compiling architecture Behavior of Shift_reg_PISO
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/comparatore.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/comparatore.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparatore
+-- Compiling architecture behavior of comparatore
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_CU_TX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_CU_TX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_CU_TX
+-- Compiling architecture Master_Behave of Uart_CU_TX
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/MUX_NBIT.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/MUX_NBIT.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_NBIT
+-- Compiling architecture BEHAVIOR of MUX_NBIT
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/DATA_REGISTER.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/DATA_REGISTER.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DATA_REGISTER
+-- Compiling architecture BEHAVIOR of DATA_REGISTER
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/TRI_STATE.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/TRI_STATE.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TRI_STATE
+-- Compiling architecture BEHAVIOR of TRI_STATE
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/testbench.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Analizzatore\testbench.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TESTBENCH
+-- Compiling architecture TEST of TESTBENCH
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/DUT_handler.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/DUT_handler.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity DUT_handler
+-- Compiling architecture BEH of DUT_handler
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/D_FF_UART.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/D_FF_UART.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity D_FF_UART
+-- Compiling architecture behavior of D_FF_UART
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/D_FF_RST_AS.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/D_FF_RST_AS.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity D_FF_RST_AS
+-- Compiling architecture behavior of D_FF_RST_AS
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/clock_divider.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/clock_divider.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clock_divider
+-- Compiling architecture BEHAVIOR of clock_divider
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_rx_datapath.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_rx_datapath.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_rx_datapath
+-- Compiling architecture path of Uart_rx_datapath
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Shift_reg.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Shift_reg.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Shift_reg
+-- Compiling architecture Behavior of Shift_reg
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/pc_interface.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\emanu\Documents\Documenti Politecnico\Sistemi digitali integrati\Laboratori\LAB Analizzatore di stati logici\Componenti_tb\Analizzatore\pc_interface.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pc_interface
+-- Compiling architecture behavior of pc_interface
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/decodifica_ascii.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/decodifica_ascii.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decodifica_ascii
+-- Compiling architecture behavior of decodifica_ascii
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_datapath_PISO.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/Uart_datapath_PISO.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Uart_datapath_PISO
+-- Compiling architecture path of Uart_datapath_PISO
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/UART_RX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/UART_RX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity UART_RX
+-- Compiling architecture link of UART_RX
+
+} {} {}} {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/single_port_ram.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/emanu/Documents/Documenti Politecnico/Sistemi digitali integrati/Laboratori/LAB Analizzatore di stati logici/Componenti_tb/Analizzatore/single_port_ram.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity single_port_ram
+-- Compiling architecture rtl of single_port_ram
+
+} {} {}}

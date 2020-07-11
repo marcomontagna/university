@@ -1,0 +1,52 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity UART_TX is 
+   PORT( start_macchina:IN std_logic;
+	Reset:IN std_logic;
+Data_In: In std_logic_vector(7 downto 0);
+         CLOCK_50 :IN std_logic;
+			Q: OUT std_logic;
+			Done: OUT std_Logic);
+end entity UART_TX;
+
+Architecture link of UART_TX is
+component Uart_datapath_PISO is
+Port(
+     
+	  CLOCK_50 :IN std_logic;
+	  D:IN std_logic_vector(7 downto 0);
+	  Rst1,Rst2,Reset_data:IN std_logic;
+	  Shift_data :IN std_logic;
+	   En_data: IN std_logic;
+		Inc1,Inc2: In std_logic;
+		TC1,TC2:OUT std_logic;
+		
+		Q: OUT std_logic
+		
+		);
+end component;
+component Uart_CU_TX is
+Port(
+     start:IN std_logic;
+	  Reset_macchina :IN std_logic;
+	  CLOCK_50 :IN std_logic;
+	  Rst1,Rst2,Reset_data:OUT std_logic;
+	  Shift_data :OUT std_logic;
+	   En_data: OUT std_logic;
+		Inc1,Inc2,Done: OUT std_logic;
+		TC1,TC2:IN std_logic
+		
+		
+		
+		);
+end component;
+signal Rst1s,Rst2s,Reset_datas,Shift_datas,En_datas: std_logic;
+signal Inc1s,Inc2s,TC1s,TC2s: std_logic;
+begin
+datapath : Uart_datapath_PISO port map(CLOCK_50,Data_In,Rst1s,Rst2s,Reset_datas,Shift_datas,En_datas,Inc1s,Inc2s,TC1s,TC2s,Q);
+CU :Uart_CU_TX port map(Start_macchina,reset,CLOCK_50,Rst1s,Rst2s,Reset_datas,Shift_datas,En_datas,Inc1s,Inc2s,Done,TC1s,TC2s);
+
+
+
+end architecture;	

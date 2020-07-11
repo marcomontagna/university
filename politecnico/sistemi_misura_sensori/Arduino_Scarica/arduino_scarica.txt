@@ -1,0 +1,208 @@
+//#include <math.h> //da usare per i logaritmi, a quanto pare non serve porcodi
+//marco usate per settare i bit a 1 o 0
+#ifndef cbi//marco usato per settare singoli bit a 0 clear bit
+#define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit)) 
+#endif
+#ifndef sbi //marco usato per settare singoli bit a 1 set bit
+#define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit)) 
+#endif 
+
+//parametri misurazione
+const int n_misure = 30; //numero di misure da effettuare
+const int n_campioni = 50; //numero di campioni da prendere 50
+const float resistenza = 987863; //impostare questo valore di resistenza in base a quello misurato in laboratorio 
+//const float vref = 1.0848;
+//const float tau= 963.17 millisecondi
+
+int tot_campioni = 0; //numero di campioni calcolati al momento
+int tot_misure = 0; //numero di misure calcolate al momento
+float tau;  //valore costante di tempo
+float condensatore_2[n_campioni] = { 0 };//valore calcolato con le due misure
+float condensatore_2medio = 0;//media valore calcolato con 2 misure
+float condensatore_reg[n_campioni] = { 0 }; //valore calcolato con la regressione lineare
+float condensatore_regmedio = 0; //valore medio regressione lineare
+float scarto_2 = 0, scarto_reg = 0; //scarto tipo metodo due misure e scarto tipo regressione lineare
+int start = 0;  //flag di controllo per gestire lo switch
+float misura_1,misura_2; //variabili usate per salvare il valore dell'adc della prima e ultima misura
+
+//parametri globali per calcolo regressione
+float delta_t = 0; //intervallo tra due campioni successivi
+float istante_t = 0; //istante di tempo corrispondente al campione
+float y = 0; //logaritmo del valore dell'ADC
+float sum_quadx = 0;
+float sum_prodxy = 0;
+float sum_mediay = 0;
+float sum_mediax = 0;
+
+//parametri linea seriale
+const int BUFFER_SIZE = 10; //ampiezza buffer
+char commandBuffer[BUFFER_SIZE + 1];//spazio da allocare per i caratteri
+int bufferPos = 0; //flag posizione puntatore buffer
+char welcome[] = { "ins tau in ms\n" }; //inserire la costante di tempo in millisecondi separando i decimali col punto e premere invio
+
+//routine usata per pulire il buffer di ricezione
+void clearBuffer() {
+	for (int i = 0; i<BUFFER_SIZE + 1; i++)
+		commandBuffer[i] = (char)0;//scrive dei caratterri nulli nel buffer di ingresso 
+	bufferPos = 0;
+}
+
+//routine usata per salvare i dati in ingresso dalla linea seriale, mi basta definire questa funzione e arduino la lancia in automatico ogni volta che c'e' roba sulla linea seriale
+void serialEvent() {
+	char inChar = Serial.read(); //legge i dati disponibili nel registro di ingresso della linea seriale
+	if (inChar == '\n') {
+		Serial.print("dato ricevuto: ");
+		tau = atof(commandBuffer); //converte la stringa ricevuta in float
+		Serial.println(tau,2);//due cifre decimali significative
+		start = 1;	//inizializza start per lo switch
+		clearBuffer();	//pulisce buffer
+	}
+	else {
+		if (bufferPos<BUFFER_SIZE - 1) {
+			commandBuffer[bufferPos++] = inChar;
+		}
+		else {
+			Serial.print("errore ricezione\n");
+			clearBuffer();
+		}
+	}
+}
+
+void setup() {
+	ADMUX = 0xC5;//abilito riferimento tensione interno, imposto left adjust e seleziono canale A5
+	ADCSRA = 0x87;//abilito ADC, imposto prescaler a 128, freq ad=125kHz, 104us per misura
+	ADCSRB = 0x06;//imposta come source di trigger l'interrupt generato dall'output compare del contatore a 16bit timer/counter1
+	TCCR1A = 0x00; //valore di default, no pwm, no input capture, no bullshit
+	TCCR1C = 0x00; //dovrebbe essere già a 0 ma lo inizializzo comunque
+	TCCR1B = 0x00;  //spengo timer
+	sbi(ADCSRA, ADSC);	//eseguo prima lettura per inizializzare l'adc
+	Serial.begin(115200);//apro linea seriale con 115200bps
+	sbi(ADCSRA, ADIF); //pulisco flag interrupt adc, in verita' non lo pulisco ma funziona tutto uguale, perche'?
+	clearBuffer();  //clean the input buffer
+	Serial.println(welcome); //messaggio default 
+	pinMode(7, OUTPUT); //inizializzazione pin digitale 7 come output
+	Serial.println(ADCSRA);//dovrebbe essere 87 cioe' 135, in verita' e' sempre 151 ma funziona tutto bene anche se non dovrebbe, perche'?
+}
+
+
+void loop() {
+	switch(start)
+	{
+	case 1:
+		//Serial.println("case 1");
+		digitalWrite(7, HIGH); //alzo la tensione e carico il condensatore
+		delay(int(3 * tau)); //aspetto che si carichi
+		start = 2;
+		break;
+	case 2:
+		//Serial.println("case 2");
+		start = 5;  //metto valore a caso tanto va in default e non succede nulla di male
+		TCCR1B = 0x00;  //spengo timer
+		TCNT1 = 0;  //resetto contatore TC1
+		if (tot_misure == 0) //lo faccio una sola volta alla prima esecuzione
+		{
+			OCR1A = int((250 / n_campioni)*tau);//numero di conteggi da eseguire tra una lettura e un'altra dell'adc, tau è in millisecondi per praticità
+			sbi(TIMSK1, OCIE1A); //abilito interrupt output compare A , uso questo per attivare la ISR relativa all'output compare del contatore TC1
+			sbi(ADCSRA, ADIE); //abilito generazione interrupt ADC, usata per entrare nella ISR dell'ADC
+			delta_t = ((250 / n_campioni)*tau) + 1;	//intervallo tra due misure
+		}
+		TCCR1B = 0x0B;  //prescaler clock contatore impostato a 64, frequenza di 250kHz e attivo ctc
+		digitalWrite(7, LOW);//porto giu' la tensione sul pin digitale 7
+		sbi(ADCSRA, ADSC); //facciamo partire prima conversione e entriamo nella ISR(ADC)
+		break;
+	case 3:
+		Serial.println("case 3");
+		Serial.print("misura ");
+		Serial.println(tot_misure+1);	//stampo numero misura corrente
+		Serial.print("metodo 2 misure, valore=");
+		Serial.print(condensatore_2[tot_misure], 7);//stampo valore condensatore misurato in microfarad
+		Serial.println("uF");		//stampo unita' di misura
+		Serial.print("metodo reg, valore=");
+		Serial.print(condensatore_reg[tot_misure], 7);//stampo valore condensatore misurato in microfarad
+		Serial.println("uF");   //stampo unita' di misura
+		if (tot_misure == n_misure - 1)
+		{
+			start = 4; //se vado qui ho finito di fare le n misure
+		}
+		else //se vado qui devo eseguire una nuova misura
+		{
+			sum_mediax = 0.0;
+			sum_mediay = 0.0;
+			sum_prodxy = 0.0;
+			sum_quadx = 0.0;
+			istante_t = 0.0;
+			tot_campioni = 0;	//resetto valore tot campioni
+			tot_misure++;	//incremento numero misure effettuate
+			start = 1; //inizio da capo il ciclo di misurazione
+		}
+		break;
+	case 4:
+		for (tot_misure = 0; tot_misure < n_misure; tot_misure++)
+		{		//calcolo la media usando sempre la stessa variabile, più lento ma molto più leggero sulla memoria
+			condensatore_2medio = (condensatore_2medio*(tot_misure) + condensatore_2[tot_misure]) / (tot_misure+1);//calcolo media progressiva
+			condensatore_regmedio = (condensatore_regmedio*(tot_misure)+condensatore_reg[tot_misure]) / (tot_misure + 1);//calcolo media progressiva
+		}
+		//calcolo scarto tipo corretto dei dati misurati con due campioni
+		scarto_2 = 0.0; 
+		scarto_reg = 0.0;
+		for (tot_misure = 0; tot_misure < n_misure; tot_misure++)
+		{	//calcolo lo scarto tipo usando di nuovo la stessa variabile
+			scarto_2 += pow((condensatore_2[tot_misure]) - (condensatore_2medio), 2);
+			scarto_reg += pow((condensatore_reg[tot_misure]) - (condensatore_regmedio), 2);
+		}
+		scarto_2 = sqrt(scarto_2 / (n_misure - 1));
+		scarto_reg = sqrt(scarto_reg /(n_misure - 1));
+		Serial.print("2 misure Media=");
+		Serial.print(condensatore_2medio, 7);	
+		Serial.println(" uF");		//stampo unita' di misura
+		Serial.print("2 misure Scarto tipo= ");
+		Serial.print(scarto_2, 7);
+		Serial.println(" uF");		//stampo unita' di misura
+		Serial.print("Reg Media= ");
+		Serial.print(condensatore_regmedio, 7);
+		Serial.println(" uF");		//stampo unita' di misura
+		Serial.print("Reg Scarto tipo= ");
+		Serial.print(scarto_reg, 7);
+		Serial.println(" uF");		//stampo unita' di misura
+		start = 5;	//vado in uno stato di default
+		break;
+	default:
+		break;
+	}
+}
+
+ISR(ADC_vect) //usata per calcolare due  punti e poi la regressione lineare
+{
+	int asd = TCNT1;
+	//parte regressione
+	istante_t = (TCNT1  + tot_campioni*(delta_t))/250; //OTTIMIZZAZIONE SI POTREBBE METTERE NELLA ROUTINE DELL'OUTPUT COMPARE A DOPO LA MISURA!!!
+	y = log(float(ADC));
+	sum_mediax += istante_t;
+	sum_mediay += y;
+	sum_prodxy += y*istante_t;
+	sum_quadx += pow(istante_t,2);
+	if (tot_campioni == 0)	//caso di primo campione misurato
+	{
+		
+		misura_1 = ADC;	//salvo in un float il valore dell'adc	
+		Serial.println(misura_1);
+	}
+	else 
+		if (tot_campioni == n_campioni-1)
+	{
+		misura_2 = ADC;
+		condensatore_2[tot_misure] = (tau*1000) / (resistenza*log((misura_1/misura_2)));//calcolo valore condensatore. il risultato e' in microfarad
+		condensatore_reg[tot_misure] = -1000 / (resistenza*(sum_prodxy - sum_mediay*sum_mediax / n_campioni) / (sum_quadx - n_campioni*pow(sum_mediax / n_campioni, 2)));
+		TCCR1B = 0x00;  //spengo contatore per fare tutto in santa pace senza preoccuparmi degli interrupt
+		start = 3; //entro nella parte dello switch (nel loop) per i calcoli	
+		Serial.println(misura_2);
+
+	}
+	if (tot_campioni != n_campioni);
+	tot_campioni++;	//incremento valore campioni misurati alla fine del ciclo
+}
+
+ISR(TIMER1_COMPA_vect)	//routine interrupt output compare A timer 1 con modalità CTC
+{	//quando eseguo questa routine di interrupt relativa al match A il flag viene pulito in automatico
+sbi(ADCSRA, ADSC);	//uso la routine interrupt del timer A per abilitare l'adc
+}
