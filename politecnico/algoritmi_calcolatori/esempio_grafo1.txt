@@ -1,0 +1,136 @@
+(Include Files / header definitions)
+
+  struct VertexNode;  // Forward Declaration of VertexNode type
+
+struct EdgeNode                                 // Structure representing an edge
+{
+  VertexNode*   destination;                    // Pointer to destination vertex
+  int           weight;                         // Edge weight
+  EdgeNode*     nextEdge;                       // Pointer to next edge
+}
+
+struct VertexNode          // Structure representing a vertex
+{
+  string        vname;                          // Name of vertex
+  bool          mark;                           // Marked flag
+  EdgeNode*     edgePtr;                  // Pointer to list of outgoing edges
+  VertexNode*   nextVertex;               // Pointer to next vertex in vertices list
+};
+class Graph		// Graph ADT using adjacency list representation
+{
+ private:		//***** Private class members below *****//
+  VertexNode*	vertices;		// Linked list of vertex nodes
+
+ public:		   //***** Public members below *****//
+  Graph();									
+  // Graph()
+  // Constructor initializes vertices linked list to empty
+	
+  ~Graph();	
+  // ~Graph()
+  // For each VertexNode in the vertices list, Destructor deallocates all EdgeNodes before
+  // deallocating the VertexNode itself
+	
+  void AddVertex(string v);		
+  // AddVertex()
+  // Adds vertex to graph assuming vertex not already present
+
+  void AddEdge(string s, string d, int w);		
+  // AddEdge()
+  // Adds edge from source S  to destination D with specified weight W.
+  // If there is not enough memory to add the edge, throw the GraphFull exception
+
+(More function prototypes that I haven't gotten to)
+
+		*edit forgot to include the print file code
+// Print -- write graph to stdout.  DO NOT MODIFY THIS FUNCTION!!!
+void Print()
+	{
+		EdgeNode* eptr;
+        VertexNode* vptr = vertices;
+		const int FIELDWIDTH = 6;
+		string STARS = "**********";
+		STARS = STARS + STARS + STARS; 
+		
+		cout << endl << STARS << endl;
+		
+		cout << setw(FIELDWIDTH) << "Vertex" << " : " << "Adjacent Vertices" << endl;
+		cout << "------------------------------" << endl;
+		
+        while(vptr != NULL)
+		{
+			cout << setw(FIELDWIDTH) << vptr->vname << " : ";
+			
+			eptr = vptr->edgePtr;
+			while (eptr != NULL)
+			{
+				cout << eptr->destination->vname << eptr->weight << " ";
+				eptr = eptr->nextEdge;
+			}
+			cout << endl;
+            vptr = vptr->nextVertex;
+		}
+		cout << STARS << endl << endl;
+	} // Graph::Print()
+}; 
+
+
+
+struct Edge{
+    Vertex *destination;
+    int weight;
+};
+
+struct Vertex{
+   std::list<Edge> incident;
+   std::string name;
+};
+
+class Graph{
+private:
+   std::list<Vertex> vertices; //you may use std::vector if change the Edge to hold an index instead of a pointer
+public:
+   Graph() = default; //good enough
+   ~Graph() = default; //good enough
+   void AddVertex(std::string name){
+      for( auto &v : vertices )
+         if( v.name == name ) return; //vertex already exists
+      vertices.push_back( Vertex(name) ); //need to create the Vertex constructor
+   }
+};
+
+
+CPP...
+#include "graph.h"
+
+Graph::Graph()	/* Default Constructor */
+{	
+	vertices = NULL;
+}
+
+Graph::~Graph() /* Default Destructor*/
+{
+	delete [] vertices;
+}
+
+void Graph::AddVertex(string v)
+{
+       /* So here, I believe what I"m doing is correct except that I do not know how to set nextVertex
+       I'm assuming some kind of recursive function.   */
+
+	vertices = new VertexNode;
+	vertices->nextVertex = NULL;
+	vertices->vname = v;
+}
+
+void Graph::AddEdge(string s, string d, int w)
+{
+        /* I don't have any idea how to code this actually, I'll update this function as I think about it more.
+        I just wanted to post this so I can be thinking while other are too. */ 
+
+	vertices = new VertexNode;
+	vertices->vname = s;
+	vertices->edgePtr->destination->vname = d;
+	vertices->edgePtr->weight = w;
+	
+}
